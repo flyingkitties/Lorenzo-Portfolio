@@ -14,8 +14,9 @@ export default function Home() {
 
       <main className="bg-[#FFFFFF]">
         <Header />
-
-        <Banner />
+        <section className="px-10">
+          <Banner />
+        </section>
       </main>
     </>
   );
