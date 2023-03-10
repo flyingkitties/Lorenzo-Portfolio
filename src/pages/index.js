@@ -12,9 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-[#FFFFFF]">
+      <main className="bg-[#FFFFFF] tracking-wide">
         <Header />
-        <section className="px-10">
+        <section className="sm:px-10 lg:px-20">
           <Banner />
         </section>
       </main>
