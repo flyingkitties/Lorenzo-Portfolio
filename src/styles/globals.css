@@ -22,4 +22,13 @@
     @apply border border-[#9D00FF] cursor-pointer rounded-lg shadow-inherit shadow-lg p-1 
     text-[#9D00FF] hover:text-white hover:transition-transform;
   }
+
+  .projectButton {
+    @apply p-3 flex items-center cursor-pointer bg-[#f5f1e4]
+    rounded-3xl truncate;
+  }
+
+  .expCards {
+    @apply flex flex-col flex-shrink-0 rounded-lg items-center bg-[#f5f1e4] p-3 m-2 w-[350px];
+  }
 }

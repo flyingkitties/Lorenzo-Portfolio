@@ -7,18 +7,16 @@ import WorkExp from "./WorkExp";
 
 function Banner() {
   return (
-    <div className="relative  h-screen ">
-      {/* add h-screen */}
+    <div
+      className="p-10 space-y-10 lg:space-y-0
+    lg:grid lg:grid-cols-2 lg:gap-5 ">
+      <AboutMe />
+      {/* 2 box */}
+      <Skills />
 
-      <div className="p-10 space-y-10 md:space-y-0">
-        <AboutMe />
-        {/* 2 box */}
-        <Skills />
-
-        {/* 3 Box */}
-        <WorkExp />
-        {/* 4 box */}
-      </div>
+      {/* 3 Box */}
+      <WorkExp />
+      {/* 4 box */}
     </div>
   );
 }
