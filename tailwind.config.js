@@ -5,12 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: (theme) => ({
-        "bg-texture": "url('/public/images/grayWall.jpg')",
-        "bg-whiteTexture": "url('/public/images/whiteBgTexture.jpg')",
-      }),
-    },
+    extend: {},
   },
   plugins: [],
 };

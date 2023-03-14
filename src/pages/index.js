@@ -1,9 +1,7 @@
 import Banner from "@/components/Banner";
 import Header from "@/components/Header";
 import Head from "next/head";
-import Image from "next/image";
 import React from "react";
-import Walpaper from "../../public/images/grayWall.jpg";
 
 export default function Home() {
   return (

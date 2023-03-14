@@ -3,15 +3,12 @@ import {
   ArrowsPointingOutIcon,
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 import Emoji from "../../public/images/EmojiDictionary.png";
 import Itunes from "../../public/images/ItunesSearch.png";
 import Nasa from "../../public/images/NASAPhotoApp.png";
 import Streaming from "../../public/images/StremingServiceClone.png";
 import ToDoApp from "../../public/images/ToDoApp.png";
-import EmojiGif from "../../public/images/GIFs/Emoji1.gif";
-import EmojiGif2 from "../../public/images/GIFs/Emoji2.gif";
 import Fructus from "../../public/images/Fructus.png";
 import Pitch from "../../public/images/Pitch.jpeg";
 
