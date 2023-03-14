@@ -284,12 +284,12 @@ function Skills() {
                 </div>
               </a>
               <div>
-                <Image
+                {/* <Image
                   src={require("../../public/images/GIFs/Fructus.GIF")}
                   alt="Loading"
                   width={150}
                   height={150}
-                />
+                /> */}
               </div>
             </div>
             <div className=" expCards ">
