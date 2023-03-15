@@ -19,10 +19,12 @@ function Skills() {
     setShow(!show);
   };
   return (
-    <div className="row-span-2">
+    <div className="relative">
       {!show ? (
-        <div className="bg-[#fbfaf6] opacity-80  rounded-lg shadow-lg drop-shadow-2xl text-[#595260]">
-          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-lg p-2 pb-5 ">
+        <div
+          className="bg-[#fbfaf6] opacity-80  rounded-2xl shadow-lg drop-shadow-2xl text-[#595260]
+         lg:absolute top-0 right-0 lg:max-w-[630px] lg:h-[540px]">
+          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left text-[#595260] font-semibold ">
               Projects
             </p>
@@ -134,8 +136,10 @@ function Skills() {
           </div>
         </div>
       ) : (
-        <div className=" bg-[#fbfaf6] opacity-80  rounded-lg shadow-lg drop-shadow-2xl z-10 text-[#595260]">
-          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-lg p-2 pb-5 ">
+        <div
+          className=" bg-[#fbfaf6] opacity-80  rounded-2xl shadow-lg drop-shadow-2xl z-10 text-[#595260]
+        lg:opacity-100 lg:bg-[#f0ebd8]">
+          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left text-[#595260] font-semibold ">
               Projects
             </p>

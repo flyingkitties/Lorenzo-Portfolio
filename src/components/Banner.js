@@ -9,14 +9,13 @@ function Banner() {
   return (
     <div
       className="p-10 space-y-10 lg:space-y-0
-    lg:grid lg:grid-cols-2 lg:gap-5 ">
+     ">
+      {/* 1 box */}
       <AboutMe />
       {/* 2 box */}
       <Skills />
-
       {/* 3 Box */}
       <WorkExp />
-      {/* 4 box */}
     </div>
   );
 }

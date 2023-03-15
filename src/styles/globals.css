@@ -15,7 +15,7 @@
   }
 
   .icon {
-    @apply h-7 w-7 cursor-pointer rounded-sm;
+    @apply h-8 w-8 cursor-pointer rounded-sm;
   }
 
   .button {
@@ -30,5 +30,8 @@
 
   .expCards {
     @apply flex flex-col flex-shrink-0 rounded-lg items-center bg-[#f5f1e4] p-3 m-2 w-[350px];
+  }
+  .cardsText {
+    @apply list-disc space-y-2 ml-5 text-xs text-justify;
   }
 }

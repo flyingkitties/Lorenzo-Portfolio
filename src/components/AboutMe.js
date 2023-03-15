@@ -13,12 +13,12 @@ function AboutMe() {
   };
 
   return (
-    <div className="">
+    <div className="relative">
       {!show ? (
         <div
           onClick={isClicked}
-          className="bg-[#fbfaf6] opacity-80 rounded-lg shadow-lg drop-shadow-2xl ">
-          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-lg p-2 pb-5 ">
+          className="bg-[#fbfaf6] opacity-80 rounded-2xl shadow-lg drop-shadow-2xl lg:absolute top-0 left-0 lg:max-w-[630px] ">
+          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left text-[#595260] font-semibold ">
               About me
             </p>
@@ -62,9 +62,10 @@ function AboutMe() {
       ) : (
         <div
           onClick={isClicked}
-          className="  bg-[#fbfaf6] opacity-80 rounded-lg shadow-lg z-10 drop-shadow-2xl
+          className="  bg-[#fbfaf6] opacity-80 rounded-2xl shadow-lg z-10 drop-shadow-2xl 
+          lg:absolute top-0 left-0 lg:h-[540px] lg:opacity-100 lg:bg-[#f0ebd8]
          ">
-          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-lg p-2 pb-5 ">
+          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left text-[#595260] font-semibold ">
               About me
             </p>
@@ -120,7 +121,7 @@ function AboutMe() {
                 </p>
               </div>
 
-              <p className="pb-5 ">
+              <p className="pb-10 ">
                 If you are interested in working with me or just want to say hi,
                 feel free to contact me.
               </p>

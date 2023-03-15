@@ -11,10 +11,12 @@ function WorkExp() {
     setShow(!show);
   };
   return (
-    <div className=" text-[#595260]">
+    <div className="relative text-[#595260] ">
       {!show ? (
-        <div className=" bg-[#fbfaf6] opacity-80  rounded-lg shadow-lg z-5 drop-shadow-2xl">
-          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-lg p-2 pb-5 ">
+        <div
+          className=" bg-[#fbfaf6] opacity-80  rounded-2xl shadow-lg z-5 drop-shadow-2xl
+        lg:absolute top-80 lg:max-w-[630px] left-0">
+          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left text-[#595260] font-semibold ">
               Experience
             </p>
@@ -51,9 +53,7 @@ function WorkExp() {
                   href="https://www.linkedin.com/in/salubrejoe/"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <h1
-                    className="text-xl font-bold cursor-pointer
-                  hover:underline  hover:text-blue-700">
+                  <h1 className="text-xl font-bold link hover:text-[#EE7B22]">
                     Check my LinkedIn
                   </h1>
                 </a>
@@ -63,8 +63,10 @@ function WorkExp() {
           </div>
         </div>
       ) : (
-        <div className=" bg-[#fbfaf6] opacity-80  rounded-lg shadow-lg z-5 drop-shadow-2xl">
-          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-lg p-2 pb-5 ">
+        <div
+          className=" bg-[#fbfaf6] opacity-80  rounded-2xl shadow-lg z-5 drop-shadow-2xl
+        lg:opacity-100 lg:bg-[#f0ebd8] lg:h-[540px]">
+          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left font-semibold ">Experience</p>
             <ArrowsPointingInIcon
               className="h-4 w-4 absolute right-4 cursor-pointer"
@@ -72,9 +74,9 @@ function WorkExp() {
             />
           </div>
           <div
-            className=" flex p-3 overflow-scroll overflow-x-scroll scrollbar-thin
+            className=" flex pb-8 px-5 lg:space-x-10 overflow-scroll overflow-x-scroll scrollbar-thin
              scrollbar-track-gray-500/20 ">
-            <div className="expCards">
+            <div className="expCards ">
               <div className="p-2">
                 <h1 className="text-xl font-bold">Failsafe Administrator</h1>
                 <h3 className="font-semibold">NHS Trust - Brighton</h3>
@@ -83,7 +85,7 @@ function WorkExp() {
                 </h3>
               </div>
               <div className="px-5">
-                <ul className="list-disc space-y-2 ml-5 text-xs text-justify">
+                <ul className="cardsText">
                   <li>
                     Deal effectively, in a tactful and sensitive manner, using
                     own judgment and initiative, in respect of all
@@ -118,15 +120,11 @@ function WorkExp() {
                 </h3>
               </div>
               <div className="px-5">
-                <ul className="list-disc space-y-2 ml-5 text-xs text-justify">
+                <ul className="cardsText">
                   <li>
                     Involved on the opening of this new business, developed the
                     drinks menu, new suppliers&apos; relationship, profit
                     reports and GPs for the business.
-                  </li>
-                  <li>
-                    Developed the drinks menu, new suppliers&apos; relationship,
-                    profit reports and GPs for the business.
                   </li>
                   <li>
                     Trained new staff members on the high-quality customer
@@ -153,9 +151,7 @@ function WorkExp() {
                   href="https://www.linkedin.com/in/salubrejoe/"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <h1
-                    className="text-xl font-bold cursor-pointer
-                  hover:underline hover:text-blue-700">
+                  <h1 className="text-xl font-bold link hover:text-[#EE7B22]">
                     Check my LinkedIn
                   </h1>
                 </a>
