@@ -40,8 +40,8 @@ function AboutMe() {
               </div>
 
               <div className="items-center text-left pl-5 ">
-                <h2 className="text-2xl font-bold ">Lorenzo Polato</h2>
-                <h3 className="text-lg font-bold ">
+                <h2 className="sm:text-2xl font-bold ">Lorenzo Polato</h2>
+                <h3 className="sm:text-lg font-semibold ">
                   Swift and UIKit Developer
                 </h3>
               </div>
@@ -93,8 +93,8 @@ function AboutMe() {
               </div>
 
               <div className="items-center text-left pl-5 ">
-                <h2 className="text-2xl font-bold ">Lorenzo Polato</h2>
-                <h3 className="text-lg font-bold ">
+                <h2 className="sm:text-2xl font-bold ">Lorenzo Polato</h2>
+                <h3 className="sm:text-lg font-semibold ">
                   Swift and UIKit Developer
                 </h3>
               </div>

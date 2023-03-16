@@ -34,7 +34,7 @@ function Skills() {
             />
           </div>
 
-          <div className=" grid grid-cols-1 sm:grid-cols-2 px-24 sm:px-8 lg:px-10 md:px-20  p-5 sm:gap-5  gap-3">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 ld:px-24 sm:px-8 lg:px-10 md:px-20  p-5 sm:gap-5  gap-3">
             <a
               href="https://github.com/Salubrejoe/Emoji-Dictionary"
               target="_blank"
