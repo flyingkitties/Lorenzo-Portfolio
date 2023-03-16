@@ -11,12 +11,14 @@ function WorkExp() {
     setShow(!show);
   };
   return (
-    <div className="relative text-[#595260] ">
+    <div className=" text-[#595260] rounded-2xl ">
       {!show ? (
         <div
-          className=" bg-[#fbfaf6] opacity-80  rounded-2xl shadow-lg z-5 drop-shadow-2xl
-        lg:absolute top-80 lg:max-w-[630px] left-0">
-          <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
+          className=" bg-[#fbfaf6] opacity-80 rounded-2xl shadow-lg z-5 drop-shadow-2xl
+        lg:absolute  bottom-[19%] left-0  top-[50%] right-[52%] lg:max-w-[630px] ">
+          <div
+            className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center 
+          rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left text-[#595260] font-semibold ">
               Experience
             </p>
@@ -26,8 +28,8 @@ function WorkExp() {
             />
           </div>
           <div
-            className=" w-full flex p-3 px-5 pb-5 
-           overflow-scroll overflow-x-scroll scrollbar-thin scrollbar-track-gray-600/20">
+            className=" w-full flex p-3 px-5 pb-9 overflow-scroll overflow-x-scroll 
+            scrollbar-thin scrollbar-track-gray-600/20 ">
             <div className="expCards">
               <div className="p-2 text-center">
                 <h1 className="text-xl font-bold">Failsafe Administrator</h1>
@@ -65,7 +67,7 @@ function WorkExp() {
       ) : (
         <div
           className=" bg-[#fbfaf6] opacity-80  rounded-2xl shadow-lg z-5 drop-shadow-2xl
-        lg:opacity-100 lg:bg-[#f0ebd8] lg:h-[540px]">
+        lg:opacity-100 lg:bg-[#f0ebd8] lg:absolute top-0  right-0 bottom-[19%] left-0">
           <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left font-semibold ">Experience</p>
             <ArrowsPointingInIcon
@@ -151,9 +153,7 @@ function WorkExp() {
                   href="https://www.linkedin.com/in/salubrejoe/"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <h1 className="text-xl font-bold link hover:text-[#EE7B22]">
-                    Check my LinkedIn
-                  </h1>
+                  <h1 className="text-xl font-bold link ">Check my LinkedIn</h1>
                 </a>
                 <h3 className="font-semibold">For more information</h3>
               </div>

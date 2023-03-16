@@ -8,7 +8,7 @@ import WorkExp from "./WorkExp";
 function Banner() {
   return (
     <div
-      className="p-10 space-y-10 lg:space-y-0
+      className="p-10 space-y-10 lg:space-y-0 relative lg:h-screen
      ">
       {/* 1 box */}
       <AboutMe />

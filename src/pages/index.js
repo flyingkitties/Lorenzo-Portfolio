@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main
-        className="lg:h-screen bg-gradient-to-tr from-[#FF6E75]/90 via-[#DDA044] to-[#EE7B22]/90 
+        className="lg:min-h-screen  bg-gradient-to-tr from-[#FF6E75]/90 via-[#DDA044] to-[#EE7B22]/90 
       tracking-wide">
         <Header />
         <section className="sm:px-10 lg:px-20 md:pt-10">

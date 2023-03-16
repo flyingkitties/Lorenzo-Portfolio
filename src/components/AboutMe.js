@@ -13,11 +13,11 @@ function AboutMe() {
   };
 
   return (
-    <div className="relative">
+    <div className="">
       {!show ? (
         <div
-          onClick={isClicked}
-          className="bg-[#fbfaf6] opacity-80 rounded-2xl shadow-lg drop-shadow-2xl lg:absolute top-0 left-0 lg:max-w-[630px] ">
+          className="bg-[#fbfaf6] opacity-80 rounded-2xl shadow-lg drop-shadow-2xl 
+        lg:absolute top-0 right-[52%] bottom-[55%] lg:max-w-[630px] ">
           <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left text-[#595260] font-semibold ">
               About me
@@ -46,24 +46,30 @@ function AboutMe() {
                 </h3>
               </div>
             </div>
-            <div className=" space-y-3 text-[#595260] text-justify px-1">
+            <div
+              className=" space-y-3 text-[#595260] text-justify px-1 
+                ">
+              <p>Hi! Welcome to my website.</p>
               <p className="">
-                Hi, I'm Lorenzo, a junior developer who loves creating beautiful
-                and functional apps with Swift and UIKit.{" "}
+                I am Lore, a junior developer who loves creating beautiful and
+                functional apps with Swift and UIKit.{" "}
               </p>
 
               <p className="pb-5 ">
                 If you are interested in working with me or just want to say hi,
-                feel free to contact me.
+                feel free to{" "}
+                <span className="link">
+                  <a href="mailto:lorenzo.polato@gmail.com">contact me</a>
+                </span>
+                .
               </p>
             </div>
           </div>
         </div>
       ) : (
         <div
-          onClick={isClicked}
           className="  bg-[#fbfaf6] opacity-80 rounded-2xl shadow-lg z-10 drop-shadow-2xl 
-          lg:absolute top-0 left-0 lg:h-[540px] lg:opacity-100 lg:bg-[#f0ebd8]
+          lg:absolute top-0  right-0 bottom-[19%] left-0 lg:opacity-100 lg:bg-[#f0ebd8]
          ">
           <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left text-[#595260] font-semibold ">
@@ -96,34 +102,49 @@ function AboutMe() {
 
             <div
               className=" space-y-3  text-[#595260] text-justify px-1 
-             lg:space-y-5 indent-5 lg:leading-relaxed ">
-              <p className="">
-                Hi, I'm Lorenzo, a junior developer who loves creating beautiful
-                and functional apps with Swift and UIKit.{" "}
+             lg:space-y-5  lg:leading-relaxed ">
+              <p className="">Hi! Welcome to my website.</p>
+              <p>I am Lore, a junior iOS Developer. </p>
+              <p>
+                My experience with coding started in Uni when I studied Fortran,
+                Python and LaTeX.
               </p>
 
               <div>
                 <p className=" ">
-                  I started my education by following Apple's documentation and
-                  book series Develop With Swift, and since then I have gained
-                  more than one year of experience in developing iOS apps. Some
-                  of the skills I have learned and applied include advanced
-                  compositional layout, API retrieval, frameworks integration
-                  (core motion, notification center, ..), usage of generics, and
-                  async programming. You can check out some of my projects below
-                  to see what I can do. As a developer I'm always eager to learn
-                  new things and challenge myself.
+                  Nowadays my focus has shifted to Swift and iOS development.
+                  Apple’s own book series{" "}
+                  <span className="link">
+                    <a
+                      href="https://developer.apple.com/learn/curriculum/"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      (Link here)
+                    </a>
+                  </span>{" "}
+                  helped me understand and tame UIKit during the last year and a
+                  half. You can check out my personal projects on the side tab.
                 </p>
                 <p className="">
-                  When I'm not coding, I enjoy reading popular science and
-                  philosophy books, playing piano and guitar, and experimenting
-                  with homemade cocktails.
+                  In the last few months I have started to learn SwiftUI and
+                  Combine, too. For that I have been relying mostly on the
+                  official documentation and WWDC sessions, but also on Udemy’s
+                  SwiftUI Masterclass by Robert Petras.
                 </p>
               </div>
 
+              <p>
+                When I am not coding I enjoy reading popular science and
+                philosophy books, playing piano or guitar, or experiment with
+                homemade cocktails.
+              </p>
               <p className="pb-10 ">
                 If you are interested in working with me or just want to say hi,
-                feel free to contact me.
+                feel free to{" "}
+                <span className="link">
+                  <a href="mailto:lorenzo.polato@gmail.com">contact me</a>
+                </span>
+                .
               </p>
             </div>
           </div>
