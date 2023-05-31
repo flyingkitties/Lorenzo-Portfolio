@@ -98,17 +98,20 @@ function AboutMe() {
 
             <div
               className=" space-y-3  text-[#595260] text-justify px-1 
-             lg:space-y-5  lg:leading-relaxed ">
-              <p className="">Hi I am Lore!</p>
-              <p>Welcome to my website! </p>
-              <p>
-                I'm a junior iOS developer with a passion for Swift and SwiftUI.
-                My journey in the world of iOS development started not too long
-                ago, but I've quickly become addicted to the power and elegance
-                of SwiftUI.
-              </p>
+             lg:space-y-4  lg:leading-relaxed ">
+              <div className="space-y-1 lg:space-y-2 font-semibold">
+                <p className="">Hi I am Lore!</p>
+                <p>Welcome to my website! </p>
+              </div>
 
-              <div>
+              <div className="space-y-3 lg:space-y-4">
+                <p>
+                  I'm a junior iOS developer with a passion for Swift and
+                  SwiftUI. My journey in the world of iOS development started
+                  not too long ago, but I've quickly become addicted to the
+                  power and elegance of SwiftUI.
+                </p>
+
                 <p className=" ">
                   Simplicity is at the core of my development philosophy. I
                   believe in crafting clean and intuitive user interfaces that
@@ -123,25 +126,26 @@ function AboutMe() {
                   opportunities for growth, always looking to enhance my
                   knowledge and improve my coding practices.
                 </p>
-              </div>
 
-              <p>
-                I am enthusiastic about collaborating with experienced
-                developers and being part of a team that values innovation and
-                creativity. Working in a collaborative environment allows me to
-                learn from others while contributing my unique perspectives.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring the latest trends
-                in the iOS development community, reading tech blogs, or
-                experimenting with new app ideas. I'm always excited to discuss
-                new projects and ideas, so feel free to reach out!
-              </p>
-              <p>
-                Thank you for visiting my website. Let's connect and create
-                amazing experiences together!
-              </p>
-              <p className="pb-10 ">
+                <p>
+                  I am enthusiastic about collaborating with experienced
+                  developers and being part of a team that values innovation and
+                  creativity. Working in a collaborative environment allows me
+                  to learn from others while contributing my unique
+                  perspectives.
+                </p>
+                <p>
+                  When I'm not coding, you can find me exploring the latest
+                  trends in the iOS development community, reading tech blogs,
+                  or experimenting with new app ideas. I'm always excited to
+                  discuss new projects and ideas, so feel free to reach out!
+                </p>
+                <p>
+                  Thank you for visiting my website. Let's connect and create
+                  amazing experiences together!
+                </p>
+              </div>
+              <p className="pb-10 text-center">
                 <span className="link text-[#EE7B22]">
                   <a href="mailto:lorenzo.polato@gmail.com">Contact me</a>
                 </span>

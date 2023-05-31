@@ -1,16 +1,33 @@
 import {
   ArrowsPointingInIcon,
   ArrowsPointingOutIcon,
-} from "@heroicons/react/24/solid";
-import Image from "next/image";
-import React, { useState } from "react";
-import Emoji from "../../public/images/EmojiDictionary.png";
-import Itunes from "../../public/images/ItunesSearch.png";
-import Nasa from "../../public/images/NASAPhotoApp.png";
-import Streaming from "../../public/images/StremingServiceClone.png";
-import ToDoApp from "../../public/images/ToDoApp.png";
-import Fructus from "../../public/images/Fructus.png";
-import Pitch from "../../public/images/Pitch.jpeg";
+} from '@heroicons/react/24/solid';
+import Image from 'next/image';
+
+import React, { useState } from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import '../styles/Home.module.css';
+import Emoji from '../../public/images/EmojiDictionary.png';
+import EmojiDictionary1 from '../../public/images/screenShots/emojiDictionary1.png';
+import EmojiDictionary2 from '../../public/images/screenShots/emojiDictionary2.png';
+import EmojiDictionary3 from '../../public/images/screenShots/emojiDictionary3.png';
+import EmojiDictionary4 from '../../public/images/screenShots/emojiDictionary4.png';
+import Streaming from '../../public/images/Netflix.png';
+import Netflix1 from '../../public/images/screenShots/Netflix1.png';
+import Netflix2 from '../../public/images/screenShots/Netflix2.png';
+import Netflix3 from '../../public/images/screenShots/Netflix3.png';
+import Netflix4 from '../../public/images/screenShots/Netflix4.png';
+import ToDoApp from '../../public/images/ToDoApp.png';
+import ToDoApp1 from '../../public/images/screenShots/ToDo1.png';
+import ToDoApp2 from '../../public/images/screenShots/ToDo2.png';
+import Climates from '../../public/images/climates.png';
+import Climates1 from '../../public/images/screenShots/climates1.png';
+import Climates2 from '../../public/images/screenShots/climates2.png';
+import Scoreboard from '../../public/images/scoreboard.png';
+import Scoreboard1 from '../../public/images/screenShots/scoreboard1.png';
+import Scoreboard2 from '../../public/images/screenShots/scoreboard2.png';
+import Scoreboard3 from '../../public/images/screenShots/scoreboard3.png';
 
 function Skills() {
   const [show, setShow] = useState(false);
@@ -18,6 +35,7 @@ function Skills() {
   const isClicked = () => {
     setShow(!show);
   };
+
   return (
     <div className="">
       {!show ? (
@@ -44,7 +62,7 @@ function Skills() {
                   src={Emoji}
                   width={50}
                   height={50}
-                  className="rounded-full hover:border-2 "
+                  className="rounded-lg hover:border-2 "
                 />
                 <p className="p-4 text-sm ">Emoji Dictionary</p>
               </div>
@@ -55,28 +73,15 @@ function Skills() {
               rel="noopener noreferrer">
               <div className="projectButton">
                 <Image
-                  src={Itunes}
+                  src={Climates}
                   width={50}
                   height={50}
-                  className="rounded-full hover:border-2"
+                  className="rounded-lg hover:border-2"
                 />
-                <p className="p-4 text-sm">Itunes Search</p>
+                <p className="p-4 text-sm">Climates</p>
               </div>
             </a>
-            <a
-              href="https://github.com/Salubrejoe/NASAPhotoApp"
-              target="_blank"
-              rel="noopener noreferrer">
-              <div className="projectButton">
-                <Image
-                  src={Nasa}
-                  width={50}
-                  height={50}
-                  className="rounded-full hover:border-2"
-                />
-                <p className="p-4 text-sm">NASA Photo App</p>
-              </div>
-            </a>
+
             <a
               href="https://github.com/Salubrejoe/StremingService-Clone"
               target="_blank"
@@ -86,7 +91,7 @@ function Skills() {
                   src={Streaming}
                   width={50}
                   height={50}
-                  className="rounded-full hover:border-2"
+                  className="rounded-lg hover:border-2"
                 />
                 <p className="p-4 text-sm">Streaming Clone</p>
               </div>
@@ -100,37 +105,24 @@ function Skills() {
                   src={ToDoApp}
                   width={50}
                   height={50}
-                  className="rounded-full hover:border-2"
+                  className="rounded-lg hover:border-2"
                 />
                 <p className="p-4 text-sm">To Do App</p>
               </div>
             </a>
-            <a
-              href="https://github.com/Salubrejoe/Fructus"
-              target="_blank"
-              rel="noopener noreferrer">
-              <div className="projectButton">
-                <Image
-                  src={Fructus}
-                  width={50}
-                  height={50}
-                  className="rounded-full hover:border-2"
-                />
-                <p className="p-4 text-sm">Fructus App</p>
-              </div>
-            </a>
+
             <a
               href="https://github.com/Salubrejoe/Pinch"
               target="_blank"
               rel="noopener noreferrer">
               <div className="projectButton">
                 <Image
-                  src={Pitch}
+                  src={Scoreboard}
                   width={50}
                   height={50}
-                  className="rounded-full hover:border-2"
+                  className="rounded-lg hover:border-2"
                 />
-                <p className="p-4 text-sm">Pitch App</p>
+                <p className="p-4 text-sm">Scoreboard</p>
               </div>
             </a>
           </div>
@@ -162,68 +154,91 @@ function Skills() {
                     src={Emoji}
                     width={50}
                     height={50}
-                    className="rounded-full hover:border-2 "
+                    className="rounded-lg hover:border-2 "
                   />
                   <p className="p-4 text-sm ">Emoji Dictionary</p>
                 </div>
               </a>
-              <div>
-                <Image
-                  src={require("../../public/images/GIFs/Emoji1.gif")}
-                  alt="Loading"
-                  width={150}
-                  height={150}
-                />
-              </div>
+              <Carousel
+                showThumbs={false}
+                width={150}
+                swipeable="true"
+                emulateTouch="true"
+                className="control-dots dot">
+                <div className=" flex items-center cursor-pointer ">
+                  <Image
+                    src={EmojiDictionary1}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src={EmojiDictionary2}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src={EmojiDictionary3}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src={EmojiDictionary4}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+              </Carousel>
             </div>
             <div className=" expCards ">
               <a
-                href="https://github.com/Salubrejoe/iTunes-Search"
+                href="https://github.com/Salubrejoe/StremingService-Clone"
                 target="_blank"
                 rel="noopener noreferrer">
                 <div className="p-3 flex items-center cursor-pointer">
                   <Image
-                    src={Itunes}
+                    src={Climates}
                     width={50}
                     height={50}
-                    className="rounded-full hover:border-2"
+                    className="rounded-lg hover:border-2"
                   />
-                  <p className="p-4 text-sm">Itunes Search</p>
+                  <p className="p-4 text-sm">Climates</p>
                 </div>
               </a>
-              <div>
-                <Image
-                  src={require("../../public/images/GIFs/iTunesSearch.gif")}
-                  alt="Loading"
-                  width={150}
-                  height={150}
-                />
-              </div>
-            </div>
-            <div className=" expCards ">
-              <a
-                href="https://github.com/Salubrejoe/NASAPhotoApp"
-                target="_blank"
-                rel="noopener noreferrer">
-                <div className="p-3 flex items-center cursor-pointer">
+              <Carousel
+                showThumbs={false}
+                width={150}
+                swipeable="true"
+                emulateTouch="true"
+                className="control-dots dot">
+                <div className=" flex items-center cursor-pointer ">
                   <Image
-                    src={Nasa}
-                    width={50}
-                    height={50}
-                    className="rounded-full hover:border-2"
+                    src={Climates1}
+                    alt="Loading"
+                    width={150}
+                    height={150}
                   />
-                  <p className="p-4 text-sm">NASA Photo App</p>
                 </div>
-              </a>
-              <div>
-                <Image
-                  src={require("../../public/images/GIFs/AppStoreLayout.gif")}
-                  alt="Loading"
-                  width={150}
-                  height={150}
-                />
-              </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src={Climates2}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+              </Carousel>
             </div>
+
             <div className=" expCards ">
               <a
                 href="https://github.com/Salubrejoe/StremingService-Clone"
@@ -234,19 +249,50 @@ function Skills() {
                     src={Streaming}
                     width={50}
                     height={50}
-                    className="rounded-full hover:border-2"
+                    className="rounded-lg hover:border-2"
                   />
                   <p className="p-4 text-sm">Streaming Clone</p>
                 </div>
               </a>
-              <div>
-                <Image
-                  src={require("../../public/images/GIFs/StreamingClone.gif")}
-                  alt="Loading"
-                  width={150}
-                  height={150}
-                />
-              </div>
+              <Carousel
+                showThumbs={false}
+                width={150}
+                swipeable="true"
+                emulateTouch="true"
+                className="control-dots dot">
+                <div className=" flex items-center cursor-pointer ">
+                  <Image
+                    src={Netflix1}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src={Netflix2}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src={Netflix3}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src={Netflix4}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+              </Carousel>
             </div>
             <div className=" expCards ">
               <a
@@ -258,44 +304,36 @@ function Skills() {
                     src={ToDoApp}
                     width={50}
                     height={50}
-                    className="rounded-full hover:border-2"
+                    className="rounded-lg hover:border-2"
                   />
                   <p className="p-4 text-sm">To Do App</p>
                 </div>
               </a>
-              <div>
-                <Image
-                  src={require("../../public/images/GIFs/To Do.gif")}
-                  alt="Loading"
-                  width={150}
-                  height={150}
-                />
-              </div>
-            </div>
-            <div className=" expCards ">
-              <a
-                href="https://github.com/Salubrejoe/Fructus"
-                target="_blank"
-                rel="noopener noreferrer">
-                <div className="p-3 flex items-center cursor-pointer">
+              <Carousel
+                showThumbs={false}
+                width={150}
+                swipeable="true"
+                emulateTouch="true"
+                className="control-dots dot">
+                <div className=" flex items-center cursor-pointer ">
                   <Image
-                    src={Fructus}
-                    width={50}
-                    height={50}
-                    className="rounded-full hover:border-2"
+                    src={ToDoApp1}
+                    alt="Loading"
+                    width={150}
+                    height={150}
                   />
-                  <p className="p-4 text-sm">Fructus App</p>
                 </div>
-              </a>
-              <div>
-                {/* <Image
-                  src={require("../../public/images/GIFs/Fructus.GIF")}
-                  alt="Loading"
-                  width={150}
-                  height={150}
-                /> */}
-              </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src={ToDoApp2}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+              </Carousel>
             </div>
+
             <div className=" expCards ">
               <a
                 href="https://github.com/Salubrejoe/Pinch"
@@ -303,22 +341,45 @@ function Skills() {
                 rel="noopener noreferrer">
                 <div className="p-3 flex items-center cursor-pointer">
                   <Image
-                    src={Pitch}
+                    src={Scoreboard}
                     width={50}
                     height={50}
-                    className="rounded-full hover:border-2"
+                    className="rounded-lg hover:border-2"
                   />
-                  <p className="p-4 text-sm">Pitch App</p>
+                  <p className="p-4 text-sm">Scoreboard</p>
                 </div>
               </a>
-              <div>
-                {/* <Image
-                  src={require("../../public/images/GIFs/Pinch.GIF")}
-                  alt="Loading"
-                  width={150}
-                  height={150}
-                /> */}
-              </div>
+              <Carousel
+                showThumbs={false}
+                width={150}
+                swipeable="true"
+                emulateTouch="true"
+                className="control-dots dot">
+                <div className=" flex items-center cursor-pointer ">
+                  <Image
+                    src={Scoreboard1}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src={Scoreboard2}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src={Scoreboard3}
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+              </Carousel>
             </div>
           </div>
         </div>
