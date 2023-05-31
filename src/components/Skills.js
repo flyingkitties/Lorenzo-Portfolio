@@ -11,7 +11,7 @@ import Emoji from '../../public/images/EmojiDictionary.png';
 import ShoppingList from '../../public/images/ShoppingList.png';
 import Streaming from '../../public/images/Netflix.png';
 import ToDoApp from '../../public/images/ToDoApp.png';
-import Climates from '../../public/images/climates.png';
+import Climates from '../../public/images/Climates.png';
 import Scoreboard from '../../public/images/scoreboard.png';
 
 function Skills() {
