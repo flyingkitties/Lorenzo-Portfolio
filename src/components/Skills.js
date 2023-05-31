@@ -8,25 +8,11 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import '../styles/Home.module.css';
 import Emoji from '../../public/images/EmojiDictionary.png';
-import EmojiDictionary1 from '../../public/images/screenShots/emojiDictionary1.png';
-import EmojiDictionary2 from '../../public/images/screenShots/emojiDictionary2.png';
-import EmojiDictionary3 from '../../public/images/screenShots/emojiDictionary3.png';
-import EmojiDictionary4 from '../../public/images/screenShots/emojiDictionary4.png';
+import ShoppingList from '../../public/images/ShoppingList.png';
 import Streaming from '../../public/images/Netflix.png';
-import Netflix1 from '../../public/images/screenShots/Netflix1.png';
-import Netflix2 from '../../public/images/screenShots/Netflix2.png';
-import Netflix3 from '../../public/images/screenShots/Netflix3.png';
-import Netflix4 from '../../public/images/screenShots/Netflix4.png';
 import ToDoApp from '../../public/images/ToDoApp.png';
-import ToDoApp1 from '../../public/images/screenShots/ToDo1.png';
-import ToDoApp2 from '../../public/images/screenShots/ToDo2.png';
 import Climates from '../../public/images/climates.png';
-import Climates1 from '../../public/images/screenShots/climates1.png';
-import Climates2 from '../../public/images/screenShots/climates2.png';
 import Scoreboard from '../../public/images/scoreboard.png';
-import Scoreboard1 from '../../public/images/screenShots/scoreboard1.png';
-import Scoreboard2 from '../../public/images/screenShots/scoreboard2.png';
-import Scoreboard3 from '../../public/images/screenShots/scoreboard3.png';
 
 function Skills() {
   const [show, setShow] = useState(false);
@@ -52,6 +38,20 @@ function Skills() {
           </div>
 
           <div className=" grid grid-cols-1 sm:grid-cols-2 ld:px-24 sm:px-8 lg:px-10 md:px-20  p-5 sm:gap-5  gap-3">
+            <a
+              href="https://github.com/Salubrejoe/Emoji-Dictionary"
+              target="_blank"
+              rel="noopener noreferrer">
+              <div className="projectButton">
+                <Image
+                  src={ShoppingList}
+                  width={50}
+                  height={50}
+                  className="rounded-lg hover:border-2 "
+                />
+                <p className="p-4 text-sm ">Shopping List</p>
+              </div>
+            </a>
             <a
               href="https://github.com/Salubrejoe/Emoji-Dictionary"
               target="_blank"
@@ -150,6 +150,61 @@ function Skills() {
                 rel="noopener noreferrer">
                 <div className="p-3 flex items-center cursor-pointer">
                   <Image
+                    src={ShoppingList}
+                    width={50}
+                    height={50}
+                    className="rounded-lg hover:border-2 "
+                  />
+                  <p className="p-4 text-sm ">Shopping List</p>
+                </div>
+              </a>
+              <Carousel
+                showThumbs={false}
+                width={150}
+                swipeable="true"
+                emulateTouch="true"
+                className="control-dots dot">
+                <div className=" flex items-center cursor-pointer ">
+                  <Image
+                    src="https://live.staticflickr.com/65535/52940025753_f9090ed787_k.jpg"
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src="https://live.staticflickr.com/65535/52939714104_d1ef503f71_k.jpg"
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src="https://live.staticflickr.com/65535/52939569716_0ad7ee22e3_k.jpg"
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+                <div className=" flex items-center cursor-pointer">
+                  <Image
+                    src="https://live.staticflickr.com/65535/52938973887_8147b28b58_k.jpg"
+                    alt="Loading"
+                    width={150}
+                    height={150}
+                  />
+                </div>
+              </Carousel>
+            </div>
+            <div className=" expCards ">
+              <a
+                href="https://github.com/Salubrejoe/Emoji-Dictionary"
+                target="_blank"
+                rel="noopener noreferrer">
+                <div className="p-3 flex items-center cursor-pointer">
+                  <Image
                     src={Emoji}
                     width={50}
                     height={50}
@@ -166,7 +221,7 @@ function Skills() {
                 className="control-dots dot">
                 <div className=" flex items-center cursor-pointer ">
                   <Image
-                    src={EmojiDictionary1}
+                    src="https://live.staticflickr.com/65535/52939569891_b22619dffd_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -174,7 +229,7 @@ function Skills() {
                 </div>
                 <div className=" flex items-center cursor-pointer">
                   <Image
-                    src={EmojiDictionary2}
+                    src="https://live.staticflickr.com/65535/52938974002_6340a5d117_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -182,7 +237,7 @@ function Skills() {
                 </div>
                 <div className=" flex items-center cursor-pointer">
                   <Image
-                    src={EmojiDictionary3}
+                    src="https://live.staticflickr.com/65535/52940025963_e767640bb0_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -190,7 +245,7 @@ function Skills() {
                 </div>
                 <div className=" flex items-center cursor-pointer">
                   <Image
-                    src={EmojiDictionary4}
+                    src="https://live.staticflickr.com/65535/52939569936_fb653ca9d1_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -221,7 +276,7 @@ function Skills() {
                 className="control-dots dot">
                 <div className=" flex items-center cursor-pointer ">
                   <Image
-                    src={Climates1}
+                    src="https://live.staticflickr.com/65535/52939569951_7210e5ec2e_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -229,7 +284,7 @@ function Skills() {
                 </div>
                 <div className=" flex items-center cursor-pointer">
                   <Image
-                    src={Climates2}
+                    src="https://live.staticflickr.com/65535/52940026018_329ff6e246_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -261,7 +316,7 @@ function Skills() {
                 className="control-dots dot">
                 <div className=" flex items-center cursor-pointer ">
                   <Image
-                    src={Netflix1}
+                    src="https://live.staticflickr.com/65535/52938973952_496cc41e2c_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -269,7 +324,7 @@ function Skills() {
                 </div>
                 <div className=" flex items-center cursor-pointer">
                   <Image
-                    src={Netflix2}
+                    src="https://live.staticflickr.com/65535/52939714479_6755cbb778_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -277,7 +332,7 @@ function Skills() {
                 </div>
                 <div className=" flex items-center cursor-pointer">
                   <Image
-                    src={Netflix3}
+                    src="https://live.staticflickr.com/65535/52939569906_440b688fee_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -285,7 +340,7 @@ function Skills() {
                 </div>
                 <div className=" flex items-center cursor-pointer">
                   <Image
-                    src={Netflix4}
+                    src="https://live.staticflickr.com/65535/52939958855_1c4e35dedd_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -316,7 +371,7 @@ function Skills() {
                 className="control-dots dot">
                 <div className=" flex items-center cursor-pointer ">
                   <Image
-                    src={ToDoApp1}
+                    src="https://live.staticflickr.com/65535/52938973857_2e8c46fde6_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -324,7 +379,7 @@ function Skills() {
                 </div>
                 <div className=" flex items-center cursor-pointer">
                   <Image
-                    src={ToDoApp2}
+                    src="https://live.staticflickr.com/65535/52940025738_e918363074_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -356,7 +411,7 @@ function Skills() {
                 className="control-dots dot">
                 <div className=" flex items-center cursor-pointer ">
                   <Image
-                    src={Scoreboard1}
+                    src="https://live.staticflickr.com/65535/52939714149_12cb03d6a2_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -364,7 +419,7 @@ function Skills() {
                 </div>
                 <div className=" flex items-center cursor-pointer">
                   <Image
-                    src={Scoreboard2}
+                    src="https://live.staticflickr.com/65535/52940025793_9b7e209b04_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -372,7 +427,7 @@ function Skills() {
                 </div>
                 <div className=" flex items-center cursor-pointer">
                   <Image
-                    src={Scoreboard3}
+                    src="https://live.staticflickr.com/65535/52938973927_834e648129_k.jpg"
                     alt="Loading"
                     width={150}
                     height={150}
@@ -388,3 +443,29 @@ function Skills() {
 }
 
 export default Skills;
+
+// Images from Flickr
+// img src="https://live.staticflickr.com/65535/52938974002_6340a5d117_k.jpg"
+// src = 'https://live.staticflickr.com/65535/52940025963_e767640bb0_k.jpg';
+// src = 'https://live.staticflickr.com/65535/52939569891_b22619dffd_k.jpg';
+// src = 'https://live.staticflickr.com/65535/52939569936_fb653ca9d1_k.jpg';
+
+// src = 'https://live.staticflickr.com/65535/52939569951_7210e5ec2e_k.jpg';
+// src = 'https://live.staticflickr.com/65535/52940026018_329ff6e246_k.jpg';
+
+//  src="https://live.staticflickr.com/65535/52938973952_496cc41e2c_k.jpg"
+//  src="https://live.staticflickr.com/65535/52939714479_6755cbb778_k.jpg"
+// src="https://live.staticflickr.com/65535/52939569906_440b688fee_k.jpg"
+// src="https://live.staticflickr.com/65535/52939958855_1c4e35dedd_k.jpg"
+
+// src="https://live.staticflickr.com/65535/52938973857_2e8c46fde6_k.jpg"
+// src="https://live.staticflickr.com/65535/52940025738_e918363074_k.jpg"
+
+// src="https://live.staticflickr.com/65535/52939714149_12cb03d6a2_k.jpg"
+// src="https://live.staticflickr.com/65535/52940025793_9b7e209b04_k.jpg"
+// src="https://live.staticflickr.com/65535/52938973927_834e648129_k.jpg"
+
+// src = 'https://live.staticflickr.com/65535/52940025753_f9090ed787_k.jpg';
+// src = 'https://live.staticflickr.com/65535/52939714104_d1ef503f71_k.jpg';
+// src = 'https://live.staticflickr.com/65535/52939569716_0ad7ee22e3_k.jpg';
+// src = 'https://live.staticflickr.com/65535/52938973887_8147b28b58_k.jpg';
