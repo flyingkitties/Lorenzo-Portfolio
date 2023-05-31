@@ -1,8 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
-import { Bars3Icon } from '@heroicons/react/24/solid';
-import Image from 'next/image';
 
 function Header() {
   return (

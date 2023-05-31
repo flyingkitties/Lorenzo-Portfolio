@@ -3,9 +3,8 @@ import {
   ArrowsPointingOutIcon,
 } from '@heroicons/react/24/solid';
 import Image from 'next/image';
-
 import React, { useState } from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import '../styles/Home.module.css';
 import Emoji from '../../public/images/EmojiDictionary.png';
