@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Image from "next/image";
+import React, { useState } from 'react';
+import Image from 'next/image';
 import {
   ArrowsPointingOutIcon,
   ArrowsPointingInIcon,
-} from "@heroicons/react/24/solid";
+} from '@heroicons/react/24/solid';
 
 function AboutMe() {
   const [show, setShow] = useState(false);
@@ -35,15 +35,13 @@ function AboutMe() {
                   className="rounded-full  "
                   width={50}
                   height={50}
-                  src="https://media.licdn.com/dms/image/D4D03AQHtEvT147hPuA/profile-displayphoto-shrink_200_200/0/1648204579075?e=1681948800&v=beta&t=lA-EyJME5Ok3zOmc_evEkmoRoQ00ptTe8U5etCW_8Ys"
+                  src="https://media.licdn.com/dms/image/D4E35AQFz5qdM__FujQ/profile-framedphoto-shrink_100_100/0/1685440839642?e=1686052800&v=beta&t=d7b50K01hQE9g7XtxWHJiVAku-WoE9kvhCefU82WbDQ"
                 />
               </div>
 
               <div className="items-center text-left pl-5 ">
-                <h2 className="sm:text-2xl font-bold ">Lorenzo Polato</h2>
-                <h3 className="sm:text-lg font-semibold ">
-                  Swift and UIKit Developer
-                </h3>
+                <h2 className="sm:text-2xl font-bold ">Lore P.</h2>
+                <h3 className="sm:text-lg font-semibold ">iOS Developer</h3>
               </div>
             </div>
             <div
@@ -52,12 +50,12 @@ function AboutMe() {
               <p>Hi! Welcome to my website.</p>
               <p className="">
                 I am Lore, a junior developer who loves creating beautiful and
-                functional apps with Swift and UIKit.{" "}
+                functional apps with SwiftUI and UIKit.{' '}
               </p>
 
               <p className="pb-5 ">
                 If you are interested in working with me or just want to say hi,
-                feel free to{" "}
+                feel free to{' '}
                 <span className="link">
                   <a href="mailto:lorenzo.polato@gmail.com">contact me</a>
                 </span>
@@ -88,63 +86,65 @@ function AboutMe() {
                   className="rounded-full  "
                   width={50}
                   height={50}
-                  src="https://media.licdn.com/dms/image/D4D03AQHtEvT147hPuA/profile-displayphoto-shrink_200_200/0/1648204579075?e=1681948800&v=beta&t=lA-EyJME5Ok3zOmc_evEkmoRoQ00ptTe8U5etCW_8Ys"
+                  src="https://media.licdn.com/dms/image/D4E35AQFz5qdM__FujQ/profile-framedphoto-shrink_100_100/0/1685440839642?e=1686052800&v=beta&t=d7b50K01hQE9g7XtxWHJiVAku-WoE9kvhCefU82WbDQ"
                 />
               </div>
 
               <div className="items-center text-left pl-5 ">
-                <h2 className="sm:text-2xl font-bold ">Lorenzo Polato</h2>
-                <h3 className="sm:text-lg font-semibold ">
-                  Swift and UIKit Developer
-                </h3>
+                <h2 className="sm:text-2xl font-bold ">Lore P.</h2>
+                <h3 className="sm:text-lg font-semibold ">iOS Developer</h3>
               </div>
             </div>
 
             <div
               className=" space-y-3  text-[#595260] text-justify px-1 
              lg:space-y-5  lg:leading-relaxed ">
-              <p className="">Hi! Welcome to my website.</p>
-              <p>I am Lore, a junior iOS Developer. </p>
+              <p className="">Hi I am Lore!</p>
+              <p>Welcome to my website! </p>
               <p>
-                My experience with coding started in Uni when I studied Fortran,
-                Python and LaTeX.
+                I'm a junior iOS developer with a passion for Swift and SwiftUI.
+                My journey in the world of iOS development started not too long
+                ago, but I've quickly become addicted to the power and elegance
+                of SwiftUI.
               </p>
 
               <div>
                 <p className=" ">
-                  Nowadays my focus has shifted to Swift and iOS development.
-                  Apple’s own book series{" "}
-                  <span className="link">
-                    <a
-                      href="https://developer.apple.com/learn/curriculum/"
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      (Link here)
-                    </a>
-                  </span>{" "}
-                  helped me understand and tame UIKit during the last year and a
-                  half. You can check out my personal projects on the side tab.
+                  Simplicity is at the core of my development philosophy. I
+                  believe in crafting clean and intuitive user interfaces that
+                  not only look great but also provide a seamless experience. I
+                  strive to create apps that users can effortlessly navigate and
+                  enjoy.
                 </p>
                 <p className="">
-                  In the last few months I have started to learn SwiftUI and
-                  Combine, too. For that I have been relying mostly on the
-                  official documentation and WWDC sessions, but also on Udemy’s
-                  SwiftUI Masterclass by Robert Petras.
+                  Eagerness to learn is my driving force. The ever-evolving
+                  nature of technology keeps me motivated to constantly expand
+                  my skillset. I actively seek out new challenges and
+                  opportunities for growth, always looking to enhance my
+                  knowledge and improve my coding practices.
                 </p>
               </div>
 
               <p>
-                When I am not coding I enjoy reading popular science and
-                philosophy books, playing piano or guitar, or experiment with
-                homemade cocktails.
+                I am enthusiastic about collaborating with experienced
+                developers and being part of a team that values innovation and
+                creativity. Working in a collaborative environment allows me to
+                learn from others while contributing my unique perspectives.
+              </p>
+              <p>
+                When I'm not coding, you can find me exploring the latest trends
+                in the iOS development community, reading tech blogs, or
+                experimenting with new app ideas. I'm always excited to discuss
+                new projects and ideas, so feel free to reach out!
+              </p>
+              <p>
+                Thank you for visiting my website. Let's connect and create
+                amazing experiences together!
               </p>
               <p className="pb-10 ">
-                If you are interested in working with me or just want to say hi,
-                feel free to{" "}
-                <span className="link">
-                  <a href="mailto:lorenzo.polato@gmail.com">contact me</a>
+                <span className="link text-[#EE7B22]">
+                  <a href="mailto:lorenzo.polato@gmail.com">Contact me</a>
                 </span>
-                .
               </p>
             </div>
           </div>
