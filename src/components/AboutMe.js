@@ -4,6 +4,7 @@ import {
   ArrowsPointingOutIcon,
   ArrowsPointingInIcon,
 } from '@heroicons/react/24/solid';
+import Profile from '../../public/images/LoreProfile.jpeg';
 
 function AboutMe() {
   const [show, setShow] = useState(false);
@@ -17,7 +18,8 @@ function AboutMe() {
       {!show ? (
         <div
           className="bg-[#fbfaf6] opacity-80 rounded-2xl shadow-lg drop-shadow-2xl 
-        lg:absolute top-0 right-[52%] bottom-[55%] lg:max-w-[630px] ">
+        lg:absolute top-0 right-[52%] bottom-[55%] lg:max-w-[630px] "
+        >
           <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left text-[#595260] font-semibold ">
               About me
@@ -35,7 +37,7 @@ function AboutMe() {
                   className="rounded-full  "
                   width={50}
                   height={50}
-                  src="https://media.licdn.com/dms/image/D4E35AQFz5qdM__FujQ/profile-framedphoto-shrink_100_100/0/1685440839642?e=1686052800&v=beta&t=d7b50K01hQE9g7XtxWHJiVAku-WoE9kvhCefU82WbDQ"
+                  src={Profile}
                 />
               </div>
 
@@ -46,7 +48,8 @@ function AboutMe() {
             </div>
             <div
               className=" space-y-3 text-[#595260] text-justify px-1 
-                ">
+                "
+            >
               <p>Hi! Welcome to my website.</p>
               <p className="">
                 I am Lore, a junior developer who loves creating beautiful and
@@ -68,7 +71,8 @@ function AboutMe() {
         <div
           className="  bg-[#fbfaf6] opacity-80 rounded-2xl shadow-lg z-10 drop-shadow-2xl 
           lg:absolute top-0  right-0 bottom-[19%] left-0 lg:opacity-100 lg:bg-[#f0ebd8]
-         ">
+         "
+        >
           <div className="flex relative bg-gradient-to-b from-[#f0ebd8] items-center rounded-t-2xl p-2 pb-5 ">
             <p className="p-1 text-left text-[#595260] font-semibold ">
               About me
@@ -98,7 +102,8 @@ function AboutMe() {
 
             <div
               className=" space-y-3  text-[#595260] text-justify px-1 
-             lg:space-y-4  lg:leading-relaxed ">
+             lg:space-y-4  lg:leading-relaxed "
+            >
               <div className="space-y-1 lg:space-y-2 font-semibold">
                 <p className="">Hi I am Lore!</p>
                 <p>Welcome to my website! </p>
