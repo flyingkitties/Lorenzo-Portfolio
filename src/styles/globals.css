@@ -10,6 +10,9 @@
 }
 
 @layer components {
+  .backgroundOrange {
+    @apply bg-gradient-to-tr from-[#FF6E75]/90 via-[#DDA044] to-[#EE7B22]/90;
+  }
   .link {
     @apply cursor-pointer hover:underline hover:text-[#EE7B22];
   }
@@ -34,8 +37,6 @@
   .cardsText {
     @apply list-disc space-y-2 ml-5 text-xs text-justify;
   }
-  .carousel {
-  }
   .carousel .control-dots {
     position: relative !important;
     top: 0;
@@ -44,5 +45,15 @@
     text-align: center;
     width: 100%;
     z-index: 1;
+  }
+  .carousel .carousel-slider {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .LogoSkill {
+    @apply flex items-center justify-center;
+  }
+  .skillsImage {
+    @apply h-[58.66px] w-[62.88px] lg:h-[66px] lg:w-[70.75px];
   }
 }

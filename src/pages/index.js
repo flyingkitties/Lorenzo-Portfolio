@@ -1,21 +1,27 @@
-import Banner from "@/components/Banner";
-import Header from "@/components/Header";
-import Head from "next/head";
-import React from "react";
+import Banner from '@/components/Banner';
+import Header from '@/components/Header';
+import Head from 'next/head';
+import React from 'react';
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Lorenzo</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Lorenzo Polato - IOS Developer - Brighton"
+          key="desc"
+        />
+        <link
+          rel="icon"
+          href="/favicon.ico"
+        />
       </Head>
 
-      <main
-        className="lg:min-h-screen  bg-gradient-to-tr from-[#FF6E75]/90 via-[#DDA044] to-[#EE7B22]/90 
-      tracking-wide">
+      <main className=" backgroundOrange tracking-wide lg:min-h-[1500px]">
         <Header />
-        <section className="sm:px-10 lg:px-20 md:pt-10">
+        <section className="xl:px-20 pb-56">
           <Banner />
         </section>
       </main>
