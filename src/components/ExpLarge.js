@@ -11,7 +11,7 @@ function WorkExp() {
         <div className="p-2 lg:p-8">
           <h1 className="text-xl font-bold">Failsafe Administrator</h1>
           <h2 className="font-semibold">NHS Trust - Brighton</h2>
-          <h2 className="text-sm font-light">April 2022 to January 2023</h2>
+          <h2 className="text-sm font-light">April 2022 to April 2023</h2>
         </div>
         <div className="px-5">
           <ul className="cardsText">

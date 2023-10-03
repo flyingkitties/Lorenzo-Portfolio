@@ -10,7 +10,7 @@ scrollbar-thin scrollbar-track-gray-600/20 min-h-full space-x-5 w-full "
         <div className="p-5 text-center">
           <h1 className="text-xl py-2 font-bold">Failsafe Administrator</h1>
           <h2 className="font-semibold">NHS Trust - Brighton</h2>
-          <h2 className="text-sm font-light">April 2022 to January 2023</h2>
+          <h2 className="text-sm font-light">April 2022 to April 2023</h2>
         </div>
       </div>
 

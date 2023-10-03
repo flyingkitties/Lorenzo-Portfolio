@@ -31,8 +31,8 @@ function Banner() {
 
   return (
     <div
-      className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-3 gap-10 p-10 lg:p-12 lg:mx-3 
-    xl:mx-10 h-screen content-center"
+      className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-3 gap-10 p-10 lg:p-20 lg:mx-3 
+    xl:mx-10 h-screen"
     >
       {/* 1 box */}
       <div
@@ -59,8 +59,8 @@ function Banner() {
             {/* end of Header */}
             {/* Body */}
             <div
-              className=" rounded-b-2xl shadow-lg drop-shadow-2xl 
-             bg-[#fbfaf6] h-[100%]"
+              className="flex items-center rounded-b-2xl shadow-lg drop-shadow-2xl 
+             bg-[#fbfaf6] h-[100%] "
             >
               <AboutMeSmall />
             </div>
@@ -160,7 +160,7 @@ function Banner() {
       {/* 4 Box */}
       <div className="lg:col-span-1 lg:row-span-1">
         <div
-          className="backdrop-blur bg-[#fbfaf6]/30 
+          className="grid content-center backdrop-blur bg-[#fbfaf6]/30 
         rounded-2xl shadow-lg drop-shadow-2xl lg:min-h-full"
         >
           <SkillsSmall />

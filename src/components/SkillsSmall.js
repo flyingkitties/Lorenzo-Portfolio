@@ -14,8 +14,8 @@ function BuzzWords() {
   return (
     <div
       className=" grid grid-flow-row grid-cols-3 sm:grid-cols-4 
-    lg:grid-cols-3 gap-5 md:gap-10 lg:gap-5 p-8 min-h-full justify-items-center
-    content-between"
+    lg:grid-cols-3 gap-x-8 gap-y-4 md:gap-10 p-8 min-h-full justify-items-center
+    justify-between"
     >
       <div className="skillsLogo">
         <Image
