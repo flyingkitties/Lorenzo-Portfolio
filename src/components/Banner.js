@@ -31,8 +31,8 @@ function Banner() {
 
   return (
     <div
-      className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-3 gap-10 p-10 lg:p-20 lg:mx-3 
-    xl:mx-10 "
+      className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-3 gap-10 p-10 lg:p-12 lg:mx-3 
+    xl:mx-10 h-screen content-center"
     >
       {/* 1 box */}
       <div
@@ -86,7 +86,7 @@ function Banner() {
       </div>
       {/* 2 box */}
       <div className="lg:col-span-1 lg:row-span-2">
-        <div className="lg:relative">
+        <div className="lg:relative h-[100%]">
           {/* Header */}
           <div
             className="flex justify-between backdrop-blur
