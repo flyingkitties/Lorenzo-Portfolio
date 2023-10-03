@@ -31,8 +31,8 @@ function Banner() {
 
   return (
     <div
-      className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-3 gap-10 p-10 lg:p-20 lg:mx-3 
-    xl:mx-10 h-screen"
+      className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-3 gap-10 p-12 lg:mx-3 
+    xl:mx-10 "
     >
       {/* 1 box */}
       <div
