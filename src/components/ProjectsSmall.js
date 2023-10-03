@@ -30,7 +30,7 @@ import widgetKit from '../../public/images/Icons/WidgetKit.png';
 function Skills() {
   return (
     <div
-      className="absolute top-0 left-0 right-0 bottom-0 p-3 overflow-scroll overflow-y-scroll scrollbar-thin
+      className="lg:absolute top-0 left-0 right-0 bottom-0 p-3 overflow-scroll overflow-y-scroll scrollbar-thin
  scrollbar-track-gray-500/20 min-w-full  "
     >
       {/* Card 1 */}
