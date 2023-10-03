@@ -8,18 +8,18 @@ import ToDoApp from '../../public/images/ToDoApp.png';
 import MaxOut from '../../public/images/maxOut.png';
 import Scoreboard from '../../public/images/scoreboard.png';
 import Image from 'next/image';
-import maxOut1 from '../../public/images/screenShots/maxOut/1.png';
-import maxOut2 from '../../public/images/screenShots/maxOut/2.png';
-import maxOut3 from '../../public/images/screenShots/maxOut/3.png';
-import maxOut4 from '../../public/images/screenShots/maxOut/4.png';
-import maxOut5 from '../../public/images/screenShots/maxOut/5.png';
-import maxOut6 from '../../public/images/screenShots/maxOut/6.png';
-import maxOut7 from '../../public/images/screenShots/maxOut/7.png';
-import maxOut8 from '../../public/images/screenShots/maxOut/8.png';
-import maxOut9 from '../../public/images/screenShots/maxOut/9.png';
+import maxOut1 from '../../public/images/screenShots/maxOut/1.1.png';
+import maxOut2 from '../../public/images/screenShots/maxOut/1.2.png';
+import maxOut3 from '../../public/images/screenShots/maxOut/1.3.png';
+import maxOut4 from '../../public/images/screenShots/maxOut/1.4.png';
+import maxOut5 from '../../public/images/screenShots/maxOut/1.5.png';
+import maxOut6 from '../../public/images/screenShots/maxOut/1.6.png';
+import maxOut7 from '../../public/images/screenShots/maxOut/1.7.png';
+import maxOut8 from '../../public/images/screenShots/maxOut/1.8.png';
+import maxOut9 from '../../public/images/screenShots/maxOut/1.9.png';
 import tuner from '../../public/images/tuner.png';
-import tuner1 from '../../public/images/screenShots/tuner/1.png';
-import tuner2 from '../../public/images/screenShots/tuner/2.png';
+import tuner1 from '../../public/images/screenShots/tuner/1.1.png';
+import tuner2 from '../../public/images/screenShots/tuner/1.2.png';
 import {
   ArrowLeftCircleIcon,
   ArrowRightCircleIcon,
