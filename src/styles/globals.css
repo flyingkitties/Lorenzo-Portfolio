@@ -30,12 +30,27 @@
     @apply p-3 flex items-center cursor-pointer bg-[#f5f1e4]
     rounded-3xl truncate;
   }
+  .headerTransparent {
+    @apply flex justify-between backdrop-blur
+    bg-[#fbfaf6]/30 dark:bg-gray-500/30 items-center 
+rounded-t-2xl p-2 text-[#fbfaf6];
+  }
+  .headerTitle {
+    @apply p-1 text-left font-semibold text-[#fbfaf6];
+  }
+  .regularBody {
+    @apply rounded-b-2xl shadow-lg drop-shadow-2xl bg-[#fbfaf6];
+  }
+  .bodyTransparent {
+    @apply grid content-center backdrop-blur bg-[#fbfaf6]/30 
+    rounded-2xl shadow-lg drop-shadow-2xl lg:min-h-full;
+  }
 
   .expCards {
     @apply flex flex-col flex-shrink-0 rounded-lg items-center bg-[#f5f1e4] w-[250px] min-h-full lg:pb-5 lg:py-4 justify-center;
   }
   .expCardsLG {
-    @apply flex flex-col flex-shrink-0 rounded-lg items-center bg-[#f5f1e4] w-[250px] lg:w-[450px] min-h-full lg:pb-5 lg:py-4 justify-center;
+    @apply flex flex-col flex-shrink-0 rounded-lg items-center bg-[#f5f1e4] w-[250px] lg:w-[450px] min-h-full pb-5 lg:py-4 justify-center;
   }
   .projCards {
     @apply min-w-full bg-[#f5f1e4] rounded-lg mb-3 pb-3;

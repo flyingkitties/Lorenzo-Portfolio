@@ -25,7 +25,6 @@ import healthKit from '../../public/images/Icons/HealthKit.png';
 import realmDB from '../../public/images/Icons/RealmDB.png';
 import swiftUI from '../../public/images/Icons/SwiftUI.png';
 import uIKit from '../../public/images/Icons/UIKit.png';
-import watchKit from '../../public/images/Icons/WatchKit.png';
 import widgetKit from '../../public/images/Icons/WidgetKit.png';
 
 function Skills() {
@@ -42,7 +41,7 @@ function Skills() {
             width={50}
             height={50}
             className="rounded-lg hover:border-2 h-full "
-            alt="Climates logo"
+            alt="Max Out logo"
           />
           <p className="p-4 text-sm">Max Out</p>
         </div>
@@ -342,6 +341,7 @@ function Skills() {
               width={50}
               height={50}
               className="rounded-lg hover:border-2 "
+              alt="Shopping List Logo"
             />
             <p className="p-4 text-sm ">Shopping List</p>
           </div>

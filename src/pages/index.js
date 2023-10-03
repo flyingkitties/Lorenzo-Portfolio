@@ -21,7 +21,7 @@ export default function Home() {
 
       <main className=" backgroundOrange tracking-wide lg:min-h-[1500px]">
         <Header />
-        <section className="px-20 xl:px-32 pb-56">
+        <section className="xl:px-20 pb-56">
           <Banner />
         </section>
       </main>

@@ -1,6 +1,9 @@
 import React from 'react';
 
 function WorkExp() {
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noreferrer');
+  };
   return (
     <div
       className=" flex pb-8 px-3 lg:px-14 py-3 lg:py-14 space-x-7 lg:space-x-10  overflow-scroll overflow-x-scroll scrollbar-thin
@@ -8,7 +11,7 @@ function WorkExp() {
     bg-[#fbfaf6] "
     >
       <div className="expCardsLG">
-        <div className="p-2 lg:p-8">
+        <div className="p-2 lg:p-8 text-center py-5">
           <h1 className="text-xl font-bold">Failsafe Administrator</h1>
           <h2 className="font-semibold">NHS Trust - Brighton</h2>
           <h2 className="text-sm font-light">April 2022 to April 2023</h2>
@@ -75,9 +78,10 @@ function WorkExp() {
       <div className="expCardsLG justify-center">
         <div className="p-2 lg:p-8 text-center ">
           <a
-            href="https://www.linkedin.com/in/salubrejoe/"
-            target="_blank"
-            rel="noopener noreferrer"
+            role="link"
+            onClick={() =>
+              openInNewTab('https://www.linkedin.com/in/salubrejoe')
+            }
           >
             <h1 className="text-xl font-bold link ">Check my LinkedIn</h1>
           </a>

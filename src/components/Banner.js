@@ -6,23 +6,16 @@ import {
   ArrowsPointingInIcon,
   ArrowsPointingOutIcon,
 } from '@heroicons/react/24/solid';
-
 import AboutMeLarge from './AboutMeLarge';
-import ProjectsLarge from './ProjectsLarge';
 import ExpSmall from './ExpSmall';
 import ExpLarge from './ExpLarge';
 
 function Banner() {
   const [show, setShow] = useState(false);
-  const [skillsShow, setSkillsShow] = useState(false);
   const [expShow, setExpShow] = useState(false);
 
   const isClicked = () => {
     setShow(!show);
-  };
-
-  const skillsIsClicked = () => {
-    setSkillsShow(!skillsShow);
   };
 
   const expIsClicked = () => {
@@ -31,7 +24,7 @@ function Banner() {
 
   return (
     <div
-      className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-3 gap-10 p-12 lg:mx-3 
+      className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-3 gap-10 p-5 md:p-12 lg:mx-3 
     xl:mx-10 "
     >
       {/* 1 box */}
@@ -45,12 +38,8 @@ function Banner() {
         {!show ? (
           <div className="lg:absolute top-0 bottom-12 left-0 right-0">
             {/* Header */}
-            <div
-              className="flex justify-between backdrop-blur
-               bg-[#fbfaf6]/30 dark:bg-gray-500/30 items-center 
-          rounded-t-2xl p-2 text-[#fbfaf6]"
-            >
-              <p className="p-1 text-left font-semibold">About me</p>
+            <div className="headerTransparent">
+              <p className="headerTitle">About me</p>
               <ArrowsPointingOutIcon
                 className="h-4 w-4 absolute right-4 cursor-pointer"
                 onClick={isClicked}
@@ -58,28 +47,21 @@ function Banner() {
             </div>
             {/* end of Header */}
             {/* Body */}
-            <div
-              className="flex items-center rounded-b-2xl shadow-lg drop-shadow-2xl 
-             bg-[#fbfaf6] h-[100%] "
-            >
+            <div className=" flex items-center regularBody h-[100%]">
               <AboutMeSmall />
             </div>
           </div>
         ) : (
           <div className="lg:absolute top-0 bottom-0 left-0 right-0 z-10">
             {/* Header */}
-            <div
-              className="flex justify-between backdrop-blur
-               bg-[#fbfaf6]/30 dark:bg-gray-500/30 items-center 
-          rounded-t-2xl p-2 text-[#fbfaf6]"
-            >
-              <p className="p-1 text-left font-semibold ">About me</p>
+            <div className="headerTransparent">
+              <p className="headerTitle">About me</p>
               <ArrowsPointingInIcon
                 className="h-4 w-4 absolute right-4 cursor-pointer"
                 onClick={isClicked}
               />
             </div>
-
+            {/* Body */}
             <AboutMeLarge />
           </div>
         )}
@@ -88,20 +70,15 @@ function Banner() {
       <div className="lg:col-span-1 lg:row-span-2">
         <div className="lg:relative h-[100%]">
           {/* Header */}
-          <div
-            className="flex justify-between backdrop-blur
-               bg-[#fbfaf6]/30 dark:bg-gray-500/30 items-center 
-          rounded-t-2xl p-2 text-[#fbfaf6]"
-          >
-            <p className="p-1 text-left text-[#fbfaf6] font-semibold ">
-              Projects
-            </p>
+          <div className="headerTransparent">
+            <p className="headerTitle">Projects</p>
           </div>
+          {/* Body */}
           <div
-            className={`rounded-b-2xl shadow-lg drop-shadow-2xl  bg-[#fbfaf6]
-          lg:absolute bottom-0 left-0 right-0 top-12 ${
-            show || expShow ? 'min-h-[600px]' : 'min-h-[655px]'
-          }`}
+            className={`regularBody lg:absolute bottom-0 left-0 right-0 
+            top-12 ${
+              show || expShow ? 'lg:min-h-[500px]' : 'lg:min-h-[655px]'
+            }`}
           >
             <ProjectsSmall />
           </div>
@@ -119,12 +96,8 @@ function Banner() {
         {!expShow ? (
           <div className="lg:absolute top-0 bottom-12 left-0 right-0">
             {/* Header */}
-            <div
-              className="flex justify-between backdrop-blur
-               bg-[#fbfaf6]/30 dark:bg-gray-500/30 items-center 
-          rounded-t-2xl p-2 text-[#fbfaf6]"
-            >
-              <p className="p-1 text-left font-semibold ">Experience</p>
+            <div className="headerTransparent">
+              <p className="headerTitle">Experience</p>
               <ArrowsPointingOutIcon
                 className="h-4 w-4 absolute right-4 cursor-pointer"
                 onClick={expIsClicked}
@@ -132,8 +105,7 @@ function Banner() {
             </div>
             {/* Body */}
             <div
-              className="rounded-b-2xl shadow-lg drop-shadow-2xl 
-             bg-[#fbfaf6] h-[100%]
+              className="regularBody h-[100%]
          "
             >
               <ExpSmall />
@@ -142,12 +114,8 @@ function Banner() {
         ) : (
           <div className="lg:absolute top-0 bottom-0 left-0 right-0 z-10">
             {/* Header */}
-            <div
-              className="flex justify-between backdrop-blur
-               bg-[#fbfaf6]/30 dark:bg-gray-500/30 items-center 
-          rounded-t-2xl p-2 text-[#fbfaf6] "
-            >
-              <p className="p-1 text-left font-semibold ">Experience</p>
+            <div className="headerTransparent">
+              <p className="headerTitle">Experience</p>
               <ArrowsPointingInIcon
                 className="h-4 w-4 absolute right-4 cursor-pointer"
                 onClick={expIsClicked}
@@ -159,10 +127,7 @@ function Banner() {
       </div>
       {/* 4 Box */}
       <div className="lg:col-span-1 lg:row-span-1">
-        <div
-          className="grid content-center backdrop-blur bg-[#fbfaf6]/30 
-        rounded-2xl shadow-lg drop-shadow-2xl lg:min-h-full"
-        >
+        <div className="bodyTransparent">
           <SkillsSmall />
         </div>
       </div>

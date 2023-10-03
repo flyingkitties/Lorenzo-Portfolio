@@ -1,6 +1,6 @@
 import React from 'react';
-import Profile from '../../public/images/LoreProfile.jpeg';
 import Image from 'next/image';
+import Profile3 from '../../public/images/profile3.png';
 
 function AboutMeLarge() {
   return (
@@ -14,7 +14,7 @@ function AboutMeLarge() {
             className="rounded-full  "
             width={80}
             height={80}
-            src={Profile}
+            src={Profile3}
             alt="Profile picture"
           />
         </div>
