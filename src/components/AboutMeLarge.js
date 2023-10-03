@@ -4,13 +4,16 @@ import Image from 'next/image';
 
 function AboutMeLarge() {
   return (
-    <div className=" px-6 items-center lg:px-10 ">
-      <div className="flex py-5">
+    <div
+      className=" px-6 items-center lg:px-20 rounded-b-2xl shadow-lg drop-shadow-2xl 
+    bg-[#fbfaf6] pb-2"
+    >
+      <div className="flex py-5 lg:py-10 items-center">
         <div className="flex pl-2 space-x-4 items-center text-center ">
           <Image
             className="rounded-full  "
-            width={50}
-            height={50}
+            width={80}
+            height={80}
             src={Profile}
             alt="Profile picture"
           />
@@ -23,54 +26,49 @@ function AboutMeLarge() {
       </div>
 
       <div
-        className=" space-y-3  text-[#595260] text-justify px-1 
+        className=" space-y-3 text-[#595260] text-justify px-1 
  lg:space-y-4  lg:leading-relaxed "
       >
-        <div className="space-y-1 lg:space-y-2 font-semibold">
-          <p className="">Hi I am Lore!</p>
-          <p>Welcome to my website! </p>
+        <div className="space-y-1 lg:pb-10 font-semibold">
+          <p className="">Welcome!</p>
         </div>
 
-        <div className="space-y-3 lg:space-y-4">
+        <div className="space-y-3 lg:space-y-5">
           <p>
-            I'm a junior iOS developer with a passion for Swift and SwiftUI. My
-            journey in the world of iOS development started not too long ago,
-            but I've quickly become addicted to the power and elegance of
-            SwiftUI.
+            I embarked on my journey in iOS development two years ago, initially
+            diving into UIKit and then embracing SwiftUI. My passion lies in
+            creating intentional and visually appealing user interfaces.
           </p>
 
           <p className=" ">
-            Simplicity is at the core of my development philosophy. I believe in
-            crafting clean and intuitive user interfaces that not only look
-            great but also provide a seamless experience. I strive to create
-            apps that users can effortlessly navigate and enjoy.
+            Over time, I've gathered experience across various Apple frameworks
+            and have utilised both on device and cloud databases for my apps.
           </p>
           <p className="">
-            Eagerness to learn is my driving force. The ever-evolving nature of
-            technology keeps me motivated to constantly expand my skillset. I
-            actively seek out new challenges and opportunities for growth,
-            always looking to enhance my knowledge and improve my coding
-            practices.
+            What fuels my enthusiasm is an appetite for learning. Technology is
+            a dynamic and ever-evolving realm, and I thrive on seeking out new
+            challenges and opportunities for growth. Constantly expanding my
+            knowledge and refining my coding practices is my way of staying
+            ahead in this fast-paced field.
           </p>
 
           <p>
-            I am enthusiastic about collaborating with experienced developers
-            and being part of a team that values innovation and creativity.
-            Working in a collaborative environment allows me to learn from
-            others while contributing my unique perspectives.
+            I'm genuinely excited about collaborating with experienced
+            developers and being part of a team that values innovation and
+            creativity. Working collaboratively not only allows me to learn from
+            others but also enables me to contribute my unique perspectives to
+            exciting projects.
           </p>
           <p>
-            When I'm not coding, you can find me exploring the latest trends in
-            the iOS development community, reading tech blogs, or experimenting
-            with new app ideas. I'm always excited to discuss new projects and
-            ideas, so feel free to reach out!
+            Thank you for taking the time to visit my website. I'm always open
+            to discussions about new projects and opportunities.
           </p>
           <p>
-            Thank you for visiting my website. Let's connect and create amazing
+            Don't hesitate to reach out. let's connect and create amazing
             experiences together!
           </p>
         </div>
-        <p className="pb-10 text-center">
+        <p className="py-10 text-center">
           <span className="link text-[#EE7B22]">
             <a href="mailto:lorenzo.polato@gmail.com">Contact me</a>
           </span>

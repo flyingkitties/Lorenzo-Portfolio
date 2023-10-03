@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Profile from '../../public/images/LoreProfile.jpeg';
+import Profile3 from '../../public/images/profile3.png';
 
 function AboutMe() {
   const [show, setShow] = useState(false);
@@ -9,14 +10,14 @@ function AboutMe() {
     setShow(!show);
   };
   return (
-    <div className=" px-6 items-center lg:px-10 ">
-      <div className="flex py-5">
+    <div className="px-6 items-center lg:px-10 ">
+      <div className="flex py-5 items-center">
         <div className="flex pl-2 space-x-4 items-center text-center ">
           <Image
             className="rounded-full  "
-            width={50}
-            height={50}
-            src={Profile}
+            width={80}
+            height={80}
+            src={Profile3}
             alt="Profile picture"
           />
         </div>
@@ -27,20 +28,21 @@ function AboutMe() {
         </div>
       </div>
       <div
-        className=" space-y-3 text-[#595260] text-justify px-1 
+        className=" space-y-4 xl:space-y-5 pb-3 text-justify px-1 
                 "
+        // text-[#595260]
       >
-        <p>Hi! Welcome to my website.</p>
+        <p>Welcome!</p>
         <p className="">
-          I am Lore, a junior developer who loves creating beautiful and
-          functional apps with SwiftUI and UIKit.{' '}
+          I'm Lore, an iOS developer who enjoys crafting intentional UIs and
+          practical apps using SwiftUI and UIKit.
         </p>
 
-        <p className="pb-5 ">
-          If you are interested in working with me or just want to say hi, feel
-          free to{' '}
+        <p className=" ">
+          If you'd like to collaborate or simply want to reach out, don't
+          hesitate to{' '}
           <span className="link">
-            <a href="mailto:lorenzo.polato@gmail.com">contact me</a>
+            <a href="mailto:lorenzo.polato@gmail.com">get in touch</a>
           </span>
           .
         </p>

@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 function Header() {
   return (
     <div
-      className="flex item-center backdrop-blur bg-[#fbfaf6]/30 dark:bg-gray-500/30 z-10 shadow-md rounded-sm sticky top-0"
+      className="flex item-center backdrop-blur bg-[#fbfaf6]/30 dark:bg-gray-500/30 z-20 shadow-md rounded-sm sticky top-0"
       // className="flex item-center bg-[#fbfaf6] opacity-80 z-10 shadow-md rounded-sm sticky top-0 "
     >
       <div className="flex items-center space-x-5 p-3 pl-2 md:pl-5 ">

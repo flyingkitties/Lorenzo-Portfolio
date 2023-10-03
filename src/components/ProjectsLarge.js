@@ -41,12 +41,12 @@ function ProjectsLarge() {
   const slideStyles = {};
   return (
     <div
-      className="  px-24 sm:px-8 lg:px-10 md:px-20  p-5 flex overflow-scroll overflow-x-scroll scrollbar-thin
- scrollbar-track-gray-500/20 "
+      className="flex p-3 overflow-scroll overflow-x-scroll scrollbar-thin
+ scrollbar-track-gray-500/20 min-h-full "
     >
       {/* Card 1 */}
       <div className=" expCards ">
-        <div className="p-3 flex items-center cursor-pointer">
+        <div className="py-3 flex items-start justify-start cursor-pointer space-x-3 min-w-[190px]">
           <Image
             src={MaxOut}
             width={50}

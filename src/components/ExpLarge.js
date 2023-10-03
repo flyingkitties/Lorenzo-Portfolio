@@ -3,11 +3,12 @@ import React from 'react';
 function WorkExp() {
   return (
     <div
-      className=" flex pb-8 px-5 lg:space-x-10 overflow-scroll overflow-x-scroll scrollbar-thin
- scrollbar-track-gray-500/20 "
+      className=" flex pb-8 px-3 lg:px-14 py-3 lg:py-14 space-x-7 lg:space-x-10  overflow-scroll overflow-x-scroll scrollbar-thin
+ scrollbar-track-gray-500/20 rounded-b-2xl shadow-lg drop-shadow-2xl 
+    bg-[#fbfaf6] "
     >
-      <div className="expCards ">
-        <div className="p-2">
+      <div className="expCardsLG">
+        <div className="p-2 lg:p-8">
           <h1 className="text-xl font-bold">Failsafe Administrator</h1>
           <h2 className="font-semibold">NHS Trust - Brighton</h2>
           <h2 className="text-sm font-light">April 2022 to January 2023</h2>
@@ -37,8 +38,8 @@ function WorkExp() {
           </ul>
         </div>
       </div>
-      <div className="expCards">
-        <div className="p-2">
+      <div className="expCardsLG">
+        <div className="p-2 lg:p-8">
           <h1 className="text-xl font-bold">Bar Manager</h1>
           <h2 className="font-semibold">Dough Lover - Brighton</h2>
           <h2 className="text-sm font-light">
@@ -71,8 +72,8 @@ function WorkExp() {
           </ul>
         </div>
       </div>
-      <div className="expCards justify-center">
-        <div className="p-2 text-center ">
+      <div className="expCardsLG justify-center">
+        <div className="p-2 lg:p-8 text-center ">
           <a
             href="https://www.linkedin.com/in/salubrejoe/"
             target="_blank"

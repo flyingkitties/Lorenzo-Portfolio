@@ -32,10 +32,26 @@
   }
 
   .expCards {
-    @apply flex flex-col flex-shrink-0 rounded-lg items-center bg-[#f5f1e4] p-3 m-2 w-[350px];
+    @apply flex flex-col flex-shrink-0 rounded-lg items-center bg-[#f5f1e4] w-[250px] min-h-full lg:pb-5 lg:py-4 justify-center;
   }
+  .expCardsLG {
+    @apply flex flex-col flex-shrink-0 rounded-lg items-center bg-[#f5f1e4] w-[250px] lg:w-[450px] min-h-full lg:pb-5 lg:py-4 justify-center;
+  }
+  .projCards {
+    @apply min-w-full bg-[#f5f1e4] rounded-lg mb-3 pb-3;
+  }
+  .projImgCards {
+    @apply flex items-center justify-center cursor-pointer min-w-[200px];
+  }
+  .projAppCards {
+    @apply flex py-2 items-start justify-center cursor-pointer min-w-full;
+  }
+  .techIcons {
+    @apply flex py-2 items-center justify-center space-x-4;
+  }
+
   .cardsText {
-    @apply list-disc space-y-2 ml-5 text-xs text-justify;
+    @apply list-disc lg:px-5 space-y-2 lg:space-y-5 lg:py-5 ml-5 text-xs lg:text-sm text-justify;
   }
   .carousel .control-dots {
     position: relative !important;
@@ -54,6 +70,9 @@
     @apply flex items-center justify-center;
   }
   .skillsImage {
-    @apply h-[58.66px] w-[62.88px] lg:h-[66px] lg:w-[70.75px];
+    @apply h-12 w-12 md:h-16 md:w-16 lg:h-14 lg:w-14;
+  }
+  .skillsLogo {
+    @apply text-white text-xs text-center space-y-1;
   }
 }
