@@ -6,9 +6,8 @@ function WorkExp() {
   };
   return (
     <div
-      className=" flex pb-8 px-3 lg:px-14 py-3 lg:py-14 space-x-7 lg:space-x-10  overflow-scroll overflow-x-scroll scrollbar-thin
-      scrollbar-corner-inherit dark:scrollbar-thumb-[#213555] dark:scrollbar-track-[#161a22] rounded-b-2xl shadow-lg drop-shadow-2xl 
-     darkModeBody"
+      className=" flex pb-8 px-3 lg:px-14 py-3 lg:py-14 space-x-7 lg:space-x-10  
+      overflow-scroll overflow-x-scroll scrollbarBox darkModeBody"
     >
       <div className="expCardsLG darkModeBody">
         <div className="p-2 lg:p-8 text-center py-5">

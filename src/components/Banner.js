@@ -75,7 +75,7 @@ function Banner() {
           </div>
           {/* Body */}
           <div
-            className={`regularBody lg:absolute bottom-0 left-0 right-0 
+            className={`regularBody darkModeBody lg:absolute bottom-0 left-0 right-0 
             top-12 ${
               show || expShow ? 'lg:min-h-[500px]' : 'lg:min-h-[655px]'
             }`}
@@ -105,7 +105,7 @@ function Banner() {
             </div>
             {/* Body */}
             <div
-              className="regularBody h-[100%]
+              className="regularBody h-[100%] darkModeBody rounded-b-2xl
          "
             >
               <ExpSmall />

@@ -3,9 +3,9 @@ import React from 'react';
 function ExpSmall() {
   return (
     <div
+      //  dark:scrollbar-thumb-[#213555] dark:scrollbar-track-[#161a22]  scrollbar-thumb-current
       className="flex p-3 px-5 overflow-scroll overflow-x-scroll 
-scrollbar-thin scrollbar-corner-inherit dark:scrollbar-thumb-[#213555] dark:scrollbar-track-[#161a22]
- min-h-full space-x-5 w-full darkModeBody"
+ min-h-full space-x-5 w-full scrollbarBox darkModeBody"
     >
       <div className="expCards darkModeBody">
         <div className="p-5 text-center">

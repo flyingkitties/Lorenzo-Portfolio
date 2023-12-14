@@ -29,7 +29,10 @@ import widgetKit from '../../public/images/Icons/WidgetKit.png';
 
 function Skills() {
   return (
-    <div className="lg:absolute top-0 left-0 right-0 bottom-0 p-3 overflow-scroll overflow-y-scroll scrollbar-thin scrollbar-corner-inherit dark:scrollbar-thumb-[#213555] dark:scrollbar-track-[#161a22] min-w-full darkModeBody ">
+    <div
+      className="lg:absolute top-0 left-0 right-0 bottom-0 p-3 overflow-scroll overflow-y-scroll 
+    scrollbarBox min-w-full darkModeBody"
+    >
       {/* Card 1 */}
       <div className="projCards darkModeBody">
         <div className="projAppCards">
@@ -42,7 +45,7 @@ function Skills() {
           />
           <p className="p-4 text-sm">Max Out</p>
         </div>
-        <hr className="border-white" />
+        <hr className="horizontalLine" />
         <div className="techIcons">
           <Image
             alt="Tech Logo"
@@ -81,7 +84,7 @@ function Skills() {
             width={20}
           />
         </div>
-        <hr className="border-white pb-3" />
+        <hr className="horizontalLine pb-3" />
         <div
           className="flex overflow-scroll overflow-x-scroll scrollbar-thin
     scrollbar-track-gray-500/20 space-x-5 px-4"
@@ -173,7 +176,7 @@ function Skills() {
           />
           <p className="p-4 text-sm">Tuner</p>
         </div>
-        <hr className="border-white " />
+        <hr className="horizontalLine" />
         <div className="techIcons">
           <Image
             alt="Tech Logo"
@@ -182,7 +185,7 @@ function Skills() {
             width={20}
           />
         </div>
-        <hr className="border-white pb-3" />
+        <hr className="horizontalLine pb-3" />
         <div
           className="flex overflow-scroll overflow-x-scroll scrollbar-thin
     scrollbar-track-gray-500/20 space-x-5 px-4"
@@ -223,7 +226,7 @@ function Skills() {
             <p className="p-4 text-sm">Scoreboard</p>
           </div>
         </a>
-        <hr className="border-white" />
+        <hr className="horizontalLine" />
         <div className="techIcons">
           <Image
             alt="Tech Logo"
@@ -238,7 +241,7 @@ function Skills() {
             width={20}
           />
         </div>
-        <hr className="border-white pb-3" />
+        <hr className="horizontalLine pb-3" />
         <div
           className="flex overflow-scroll overflow-x-scroll scrollbar-thin
     scrollbar-track-gray-500/20 space-x-5 px-4"
@@ -287,7 +290,7 @@ function Skills() {
             <p className="p-4 text-sm">To Do App</p>
           </div>
         </a>
-        <hr className="border-white" />
+        <hr className="horizontalLine" />
         <div className="techIcons">
           <Image
             alt="Tech Logo"
@@ -302,7 +305,7 @@ function Skills() {
             width={20}
           />
         </div>
-        <hr className="border-white pb-3" />
+        <hr className="horizontalLine pb-3" />
         <div
           className="flex overflow-scroll overflow-x-scroll scrollbar-thin
     scrollbar-track-gray-500/20 space-x-5 px-4"
@@ -343,7 +346,7 @@ function Skills() {
             <p className="p-4 text-sm ">Shopping List</p>
           </div>
         </a>
-        <hr className="border-white" />
+        <hr className="horizontalLine" />
         <div className="techIcons">
           <Image
             alt="Tech Logo"
@@ -358,7 +361,7 @@ function Skills() {
             width={20}
           />
         </div>
-        <hr className="border-white pb-3" />
+        <hr className="horizontalLine pb-3" />
         <div
           className="flex overflow-scroll overflow-x-scroll scrollbar-thin
     scrollbar-track-gray-500/20 space-x-5 px-4"
@@ -415,7 +418,7 @@ function Skills() {
             <p className="p-4 text-sm">Streaming Clone</p>
           </div>
         </a>
-        <hr className="border-white" />
+        <hr className="horizontalLine" />
         <div className="techIcons">
           <Image
             alt="Tech Logo"
@@ -430,7 +433,7 @@ function Skills() {
             width={20}
           />
         </div>
-        <hr className="border-white pb-3" />
+        <hr className="horizontalLine pb-3" />
         <div
           className="flex overflow-scroll overflow-x-scroll scrollbar-thin
     scrollbar-track-gray-500/20 space-x-5 px-4"
@@ -487,7 +490,7 @@ function Skills() {
             <p className="p-4 text-sm ">Emoji Dictionary</p>
           </div>
         </a>
-        <hr className="border-white" />
+        <hr className="horizontalLine" />
         <div className="techIcons">
           <Image
             alt="Tech Logo"
@@ -496,7 +499,7 @@ function Skills() {
             width={20}
           />
         </div>
-        <hr className="border-white pb-3" />
+        <hr className="horizontalLine pb-3" />
         <div
           className="flex overflow-scroll overflow-x-scroll scrollbar-thin
     scrollbar-track-gray-500/20 space-x-5 px-4"
