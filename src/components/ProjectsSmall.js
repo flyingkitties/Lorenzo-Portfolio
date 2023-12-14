@@ -27,9 +27,9 @@ import swiftUI from '../../public/images/Icons/SwiftUI.png';
 import uIKit from '../../public/images/Icons/UIKit.png';
 import widgetKit from '../../public/images/Icons/WidgetKit.png';
 import socialProjectLogo from '../../public/images/SocialProject.png';
-import socialProject1 from '../../public/images/screenShots/socialProject/North.PNG';
-import socialProject2 from '../../public/images/screenShots/socialProject/SignOut.PNG';
-import socialProject3 from '../../public/images/screenShots/socialProject/Favorites.PNG';
+import socialProject1 from '../../public/images/screenShots/socialProject/North.jpeg';
+import socialProject2 from '../../public/images/screenShots/socialProject/SignOut.jpeg';
+import socialProject3 from '../../public/images/screenShots/socialProject/Favorites.jpeg';
 
 function Skills() {
   return (
