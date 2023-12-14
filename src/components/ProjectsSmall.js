@@ -29,12 +29,9 @@ import widgetKit from '../../public/images/Icons/WidgetKit.png';
 
 function Skills() {
   return (
-    <div
-      className="lg:absolute top-0 left-0 right-0 bottom-0 p-3 overflow-scroll overflow-y-scroll scrollbar-thin
- scrollbar-track-gray-500/20 min-w-full  "
-    >
+    <div className="lg:absolute top-0 left-0 right-0 bottom-0 p-3 overflow-scroll overflow-y-scroll scrollbar-thin scrollbar-corner-inherit dark:scrollbar-thumb-[#213555] dark:scrollbar-track-[#161a22] min-w-full darkModeBody ">
       {/* Card 1 */}
-      <div className="projCards">
+      <div className="projCards darkModeBody">
         <div className="projAppCards">
           <Image
             src={MaxOut}
@@ -165,7 +162,7 @@ function Skills() {
         </div>
       </div>
       {/* Card 2 */}
-      <div className="projCards">
+      <div className="projCards darkModeBody">
         <div className="projAppCards">
           <Image
             src={tuner}
@@ -209,7 +206,7 @@ function Skills() {
         </div>
       </div>
       {/* Card 3 */}
-      <div className=" projCards ">
+      <div className=" projCards darkModeBody">
         <a
           href="https://github.com/Salubrejoe/Pinch"
           target="_blank"
@@ -273,7 +270,7 @@ function Skills() {
         </div>
       </div>
       {/* Card 4 */}
-      <div className="projCards">
+      <div className="projCards darkModeBody">
         <a
           href="https://github.com/Salubrejoe/ToDoListApp"
           target="_blank"
@@ -329,7 +326,7 @@ function Skills() {
         </div>
       </div>
       {/* Card 5 */}
-      <div className="projCards">
+      <div className="projCards darkModeBody">
         <a
           href="https://github.com/Salubrejoe/Emoji-Dictionary"
           target="_blank"
@@ -401,7 +398,7 @@ function Skills() {
         </div>
       </div>
       {/* Card 6 */}
-      <div className="projCards">
+      <div className="projCards darkModeBody">
         <a
           href="https://github.com/Salubrejoe/StremingService-Clone"
           target="_blank"
@@ -473,7 +470,7 @@ function Skills() {
         </div>
       </div>
       {/* Card 7  */}
-      <div className="projCards">
+      <div className="projCards darkModeBody">
         <a
           href="https://github.com/Salubrejoe/Emoji-Dictionary"
           target="_blank"

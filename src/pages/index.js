@@ -19,7 +19,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className=" backgroundOrange tracking-wide lg:min-h-[1500px]">
+      <main className=" backgroundOrange dark:backgroundDark tracking-wide lg:min-h-[1500px]">
         <Header />
         <section className="xl:px-20 pb-56">
           <Banner />

@@ -4,9 +4,10 @@ function ExpSmall() {
   return (
     <div
       className="flex p-3 px-5 overflow-scroll overflow-x-scroll 
-scrollbar-thin scrollbar-track-gray-600/20 min-h-full space-x-5 w-full "
+scrollbar-thin scrollbar-corner-inherit dark:scrollbar-thumb-[#213555] dark:scrollbar-track-[#161a22]
+ min-h-full space-x-5 w-full darkModeBody"
     >
-      <div className="expCards">
+      <div className="expCards darkModeBody">
         <div className="p-5 text-center">
           <h1 className="text-xl py-2 font-bold">Failsafe Administrator</h1>
           <h2 className="font-semibold">NHS Trust - Brighton</h2>
@@ -14,7 +15,7 @@ scrollbar-thin scrollbar-track-gray-600/20 min-h-full space-x-5 w-full "
         </div>
       </div>
 
-      <div className="expCards">
+      <div className="expCards darkModeBody">
         <div className="p-5 text-center">
           <h1 className="text-xl py-2 font-bold">Bar Manager</h1>
           <h2 className="font-semibold">Dough Lover - Brighton</h2>
@@ -23,7 +24,7 @@ scrollbar-thin scrollbar-track-gray-600/20 min-h-full space-x-5 w-full "
           </h2>
         </div>
       </div>
-      <div className="expCards justify-center">
+      <div className="expCards justify-center darkModeBody">
         <div className="p-2 text-center ">
           <a
             href="https://www.linkedin.com/in/salubrejoe/"

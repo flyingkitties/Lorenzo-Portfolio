@@ -4,7 +4,7 @@ import Profile3 from '../../public/images/profile3.png';
 
 function AboutMe() {
   return (
-    <div className="px-6 items-center lg:px-10 ">
+    <div className="px-6 items-center lg:px-10">
       <div className="flex py-5 items-center">
         <div className="flex pl-2 space-x-4 items-center text-center ">
           <Image
@@ -31,7 +31,7 @@ function AboutMe() {
         <p className=" ">
           If you'd like to collaborate or simply want to reach out, don't
           hesitate to{' '}
-          <span className="link text-[#EE7B22]">
+          <span className="link text-[#EE7B22] dark:text-[#98E4FF]">
             <a href="mailto:lorenzo.polato@gmail.com">get in touch</a>
           </span>
           .

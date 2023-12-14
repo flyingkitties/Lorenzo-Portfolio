@@ -47,7 +47,7 @@ function Banner() {
             </div>
             {/* end of Header */}
             {/* Body */}
-            <div className=" flex items-center regularBody h-[100%]">
+            <div className=" flex items-center regularBody h-[100%] darkModeBody">
               <AboutMeSmall />
             </div>
           </div>

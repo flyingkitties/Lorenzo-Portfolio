@@ -6,7 +6,7 @@ function AboutMeLarge() {
   return (
     <div
       className=" px-6 items-center lg:px-20 rounded-b-2xl shadow-lg drop-shadow-2xl 
-    bg-[#fbfaf6] pb-2"
+    bg-[#fbfaf6] pb-2 dark:bg-[#1C1C1E] dark:text-[#fbfaf6]"
     >
       <div className="flex py-5 lg:py-10 items-center">
         <div className="flex pl-2 space-x-4 items-center text-center ">
@@ -27,7 +27,7 @@ function AboutMeLarge() {
 
       <div
         className=" space-y-3 text-[#595260] text-justify px-1 
- lg:space-y-4  lg:leading-relaxed "
+ lg:space-y-4  lg:leading-relaxed dark:text-[#fbfaf6]"
       >
         <div className="space-y-1 lg:pb-10 font-semibold">
           <p className="">Welcome!</p>
@@ -69,7 +69,7 @@ function AboutMeLarge() {
           </p>
         </div>
         <p className="py-10 text-center">
-          <span className="link text-[#EE7B22]">
+          <span className="link text-[#EE7B22] dark:text-[#98E4FF]">
             <a href="mailto:lorenzo.polato@gmail.com">Contact me</a>
           </span>
         </p>
