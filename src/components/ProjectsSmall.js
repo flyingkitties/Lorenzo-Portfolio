@@ -26,6 +26,10 @@ import realmDB from '../../public/images/Icons/RealmDB.png';
 import swiftUI from '../../public/images/Icons/SwiftUI.png';
 import uIKit from '../../public/images/Icons/UIKit.png';
 import widgetKit from '../../public/images/Icons/WidgetKit.png';
+import socialProjectLogo from '../../public/images/SocialProject.png';
+import socialProject1 from '../../public/images/screenShots/socialProject/TheNorth.PNG';
+import socialProject2 from '../../public/images/screenShots/socialProject/SignOut.PNG';
+import socialProject3 from '../../public/images/screenShots/socialProject/Favorites.PNG';
 
 function Skills() {
   return (
@@ -33,18 +37,210 @@ function Skills() {
       className="lg:absolute top-0 left-0 right-0 bottom-0 p-3 overflow-scroll overflow-y-scroll 
     scrollbarBox min-w-full darkModeBody"
     >
-      {/* Card 1 */}
+      {/* Card 1 - Tuner */}
       <div className="projCards darkModeBody">
-        <div className="projAppCards">
+        <a
+          href="https://github.com/Salubrejoe/Tuner"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="projAppCards">
+            <Image
+              src={tuner}
+              width={50}
+              height={50}
+              className="rounded-lg hover:border-2"
+              alt="Tuner logo"
+            />
+            <p className="p-4 text-sm">Tuner</p>
+          </div>
+        </a>
+        <hr className="horizontalLine" />
+        <div className="techIcons">
           <Image
-            src={MaxOut}
-            width={50}
-            height={50}
-            className="rounded-lg hover:border-2 h-full "
-            alt="Max Out logo"
+            alt="Tech Logo"
+            src={swiftUI}
+            height={20}
+            width={20}
           />
-          <p className="p-4 text-sm">Max Out</p>
         </div>
+        <hr className="horizontalLine pb-3" />
+        <div
+          className="flex overflow-scroll overflow-x-scroll scrollbar-thin
+    scrollbar-track-gray-500/20 space-x-5 px-4"
+        >
+          <div className="projImgCards">
+            <Image
+              src={tuner1}
+              alt="Screen 1"
+              width={200}
+              height={400}
+            />
+          </div>
+          <div className="projImgCards">
+            <Image
+              src={tuner2}
+              alt="Screen 2"
+              width={200}
+              height={400}
+            />
+          </div>
+        </div>
+      </div>
+      {/* Card 2 - Social Project */}
+      <div className="projCards darkModeBody">
+        <a
+          href="https://github.com/Salubrejoe/SocialProject"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="projAppCards">
+            <Image
+              src={socialProjectLogo}
+              width={50}
+              height={50}
+              className="rounded-lg hover:border-2"
+              alt="Tuner logo"
+            />
+            <p className="p-4 text-sm">Social Project</p>
+          </div>
+        </a>
+        <hr className="horizontalLine" />
+        <div className="techIcons">
+          <Image
+            alt="Tech Logo"
+            src={swiftUI}
+            height={20}
+            width={20}
+          />
+          <Image
+            alt="Tech Logo"
+            src={firebase}
+            height={20}
+            width={20}
+          />
+        </div>
+        <hr className="horizontalLine pb-3" />
+        <div
+          className="flex overflow-scroll overflow-x-scroll scrollbar-thin
+    scrollbar-track-gray-500/20 space-x-5 px-4"
+        >
+          <div className="projImgCards">
+            <Image
+              src={socialProject1}
+              alt="Screen 1"
+              width={200}
+              height={400}
+            />
+          </div>
+          <div className="projImgCards">
+            <Image
+              src={socialProject2}
+              alt="Screen 2"
+              width={200}
+              height={400}
+            />
+          </div>
+          <div className="projImgCards">
+            <Image
+              src={socialProject3}
+              alt="Screen 2"
+              width={200}
+              height={400}
+            />
+          </div>
+        </div>
+      </div>
+      {/* Card 3 - Streaming Clone */}
+      <div className="projCards darkModeBody">
+        <a
+          href="https://github.com/Salubrejoe/StremingService-Clone"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="projAppCards">
+            <Image
+              src={Streaming}
+              width={50}
+              height={50}
+              className="rounded-lg hover:border-2"
+              alt="Streaming logo"
+            />
+            <p className="p-4 text-sm">Streaming Clone</p>
+          </div>
+        </a>
+        <hr className="horizontalLine" />
+        <div className="techIcons">
+          <Image
+            alt="Tech Logo"
+            src={uIKit}
+            height={20}
+            width={20}
+          />
+          <Image
+            alt="Tech Logo"
+            src={coreData}
+            height={20}
+            width={20}
+          />
+        </div>
+        <hr className="horizontalLine pb-3" />
+        <div
+          className="flex overflow-scroll overflow-x-scroll scrollbar-thin
+    scrollbar-track-gray-500/20 space-x-5 px-4"
+        >
+          <div className="projImgCards">
+            <Image
+              src="https://live.staticflickr.com/65535/52938973952_496cc41e2c_k.jpg"
+              alt="Screen 1"
+              width={200}
+              height={400}
+            />
+          </div>
+          <div className="projImgCards">
+            <Image
+              src="https://live.staticflickr.com/65535/52939714479_6755cbb778_k.jpg"
+              alt="Screen 2"
+              width={200}
+              height={400}
+            />
+          </div>
+          <div className="projImgCards">
+            <Image
+              src="https://live.staticflickr.com/65535/52939569906_440b688fee_k.jpg"
+              alt="Screen 3"
+              width={200}
+              height={400}
+            />
+          </div>
+          <div className="projImgCards">
+            <Image
+              src="https://live.staticflickr.com/65535/52939958855_1c4e35dedd_k.jpg"
+              alt="Screen 4"
+              width={200}
+              height={400}
+            />
+          </div>
+        </div>
+      </div>
+      {/* Card 4 - Max Out*/}
+      <div className="projCards darkModeBody">
+        <a
+          href="https://github.com/Salubrejoe/MaxOut2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="projAppCards">
+            <Image
+              src={MaxOut}
+              width={50}
+              height={50}
+              className="rounded-lg hover:border-2 h-full "
+              alt="Max Out logo"
+            />
+            <p className="p-4 text-sm">Max Out</p>
+          </div>
+        </a>
         <hr className="horizontalLine" />
         <div className="techIcons">
           <Image
@@ -164,23 +360,35 @@ function Skills() {
           </div>
         </div>
       </div>
-      {/* Card 2 */}
+      {/* Card 5 - ToDo List */}
       <div className="projCards darkModeBody">
-        <div className="projAppCards">
-          <Image
-            src={tuner}
-            width={50}
-            height={50}
-            className="rounded-lg hover:border-2"
-            alt="Tuner logo"
-          />
-          <p className="p-4 text-sm">Tuner</p>
-        </div>
+        <a
+          href="https://github.com/Salubrejoe/ToDoListApp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="projAppCards">
+            <Image
+              src={ToDoApp}
+              width={50}
+              height={50}
+              className="rounded-lg hover:border-2"
+              alt="ToDoApp logo"
+            />
+            <p className="p-4 text-sm">To Do App</p>
+          </div>
+        </a>
         <hr className="horizontalLine" />
         <div className="techIcons">
           <Image
             alt="Tech Logo"
-            src={swiftUI}
+            src={uIKit}
+            height={20}
+            width={20}
+          />
+          <Image
+            alt="Tech Logo"
+            src={realmDB}
             height={20}
             width={20}
           />
@@ -192,7 +400,7 @@ function Skills() {
         >
           <div className="projImgCards">
             <Image
-              src={tuner1}
+              src="https://live.staticflickr.com/65535/52938973857_2e8c46fde6_k.jpg"
               alt="Screen 1"
               width={200}
               height={400}
@@ -200,7 +408,7 @@ function Skills() {
           </div>
           <div className="projImgCards">
             <Image
-              src={tuner2}
+              src="https://live.staticflickr.com/65535/52940025738_e918363074_k.jpg"
               alt="Screen 2"
               width={200}
               height={400}
@@ -208,10 +416,10 @@ function Skills() {
           </div>
         </div>
       </div>
-      {/* Card 3 */}
+      {/* Card 6 - ScoreBoard */}
       <div className=" projCards darkModeBody">
         <a
-          href="https://github.com/Salubrejoe/Pinch"
+          href="https://github.com/Salubrejoe/ScoreBoard"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -272,64 +480,9 @@ function Skills() {
           </div>
         </div>
       </div>
-      {/* Card 4 */}
-      <div className="projCards darkModeBody">
-        <a
-          href="https://github.com/Salubrejoe/ToDoListApp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="projAppCards">
-            <Image
-              src={ToDoApp}
-              width={50}
-              height={50}
-              className="rounded-lg hover:border-2"
-              alt="ToDoApp logo"
-            />
-            <p className="p-4 text-sm">To Do App</p>
-          </div>
-        </a>
-        <hr className="horizontalLine" />
-        <div className="techIcons">
-          <Image
-            alt="Tech Logo"
-            src={uIKit}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={realmDB}
-            height={20}
-            width={20}
-          />
-        </div>
-        <hr className="horizontalLine pb-3" />
-        <div
-          className="flex overflow-scroll overflow-x-scroll scrollbar-thin
-    scrollbar-track-gray-500/20 space-x-5 px-4"
-        >
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52938973857_2e8c46fde6_k.jpg"
-              alt="Screen 1"
-              width={200}
-              height={400}
-            />
-          </div>
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52940025738_e918363074_k.jpg"
-              alt="Screen 2"
-              width={200}
-              height={400}
-            />
-          </div>
-        </div>
-      </div>
+
       {/* Card 5 */}
-      <div className="projCards darkModeBody">
+      {/* <div className="projCards darkModeBody">
         <a
           href="https://github.com/Salubrejoe/Emoji-Dictionary"
           target="_blank"
@@ -399,81 +552,10 @@ function Skills() {
             />
           </div>
         </div>
-      </div>
-      {/* Card 6 */}
-      <div className="projCards darkModeBody">
-        <a
-          href="https://github.com/Salubrejoe/StremingService-Clone"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="projAppCards">
-            <Image
-              src={Streaming}
-              width={50}
-              height={50}
-              className="rounded-lg hover:border-2"
-              alt="Streaming logo"
-            />
-            <p className="p-4 text-sm">Streaming Clone</p>
-          </div>
-        </a>
-        <hr className="horizontalLine" />
-        <div className="techIcons">
-          <Image
-            alt="Tech Logo"
-            src={uIKit}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={coreData}
-            height={20}
-            width={20}
-          />
-        </div>
-        <hr className="horizontalLine pb-3" />
-        <div
-          className="flex overflow-scroll overflow-x-scroll scrollbar-thin
-    scrollbar-track-gray-500/20 space-x-5 px-4"
-        >
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52938973952_496cc41e2c_k.jpg"
-              alt="Screen 1"
-              width={200}
-              height={400}
-            />
-          </div>
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52939714479_6755cbb778_k.jpg"
-              alt="Screen 2"
-              width={200}
-              height={400}
-            />
-          </div>
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52939569906_440b688fee_k.jpg"
-              alt="Screen 3"
-              width={200}
-              height={400}
-            />
-          </div>
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52939958855_1c4e35dedd_k.jpg"
-              alt="Screen 4"
-              width={200}
-              height={400}
-            />
-          </div>
-        </div>
-      </div>
+      </div> */}
+
       {/* Card 7  */}
-      <div className="projCards darkModeBody">
+      {/* <div className="projCards darkModeBody">
         <a
           href="https://github.com/Salubrejoe/Emoji-Dictionary"
           target="_blank"
@@ -537,7 +619,7 @@ function Skills() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
