@@ -32,7 +32,8 @@ function AboutMe() {
           If you'd like to collaborate or simply want to reach out, don't
           hesitate to{' '}
           <span className="link text-[#EE7B22] dark:text-[#98E4FF]">
-            <a href="mailto:lorenzo.polato@gmail.com">get in touch</a>
+            <a href="mailto:lorenzo.polato@gmail.com">get in touch </a>
+            <span> - licurge@icloud.com</span>
           </span>
           .
         </p>
