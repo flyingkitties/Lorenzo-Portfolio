@@ -5,7 +5,7 @@ import appleDark from '../../public/images/apple/Dark.png';
 
 function BuzzWords() {
   return (
-    <div className="">
+    <div className="absolute top-0 left-0 right-0 bottom-0">
       <p className="headerTitle m-2">On the App Store</p>
       <div className="grid grid-cols-2 lg:flex lg:flex-col m-5 mx-auto px-10">
         <div className="lg:flex lg:pb-2 justify-center ">
