@@ -57,7 +57,7 @@ function Banner() {
             <div className="headerTransparent">
               <p className="headerTitle">About me</p>
               <ArrowsPointingInIcon
-                className="h-4 w-4 absolute right-4 cursor-pointer"
+                className="h-4 w-4 relative right-2 cursor-pointer"
                 onClick={isClicked}
               />
             </div>
@@ -73,16 +73,16 @@ function Banner() {
         </div>
       </div>
       {/* 2 box */}
-      <div className="lg:col-span-1 lg:row-span-2">
-        <div className="lg:relative h-[100%]">
+      <div className={` ${show ? 'hidden' : 'lg:col-span-1 lg:row-span-2 '}`}>
+        <div className="lg:relative top-0 bottom-0 left-0 right-0 h-[100%]">
           {/* Header */}
           <div className="headerTransparent">
             <p className="headerTitle">Projects</p>
           </div>
           {/* Body */}
           <div
-            className={`regularBody darkModeBody lg:absolute bottom-0 left-0 right-0 
-            top-12 ${
+            className={`regularBody darkModeBody lg:relative bottom-0 left-0 right-0 
+            top-0 h-[94%] ${
               show || expShow ? 'lg:min-h-[500px]' : 'lg:min-h-[655px]'
             }`}
           >
@@ -97,15 +97,16 @@ function Banner() {
           expShow
             ? 'relative lg:row-span-full col-span-3'
             : 'relative lg:row-span-1 lg:col-span-1'
-        }`}
+        }
+        ${show && 'hidden'}`}
       >
         {!expShow ? (
-          <div className="lg:absolute top-0 bottom-12 left-0 right-0">
+          <div className="lg:relative top-0 bottom-0 left-0 right-0 h-[87%]">
             {/* Header */}
             <div className="headerTransparent">
               <p className="headerTitle">Experience</p>
               <ArrowsPointingOutIcon
-                className="h-4 w-4 absolute right-4 cursor-pointer"
+                className="h-4 w-4 relative right-2 cursor-pointer"
                 onClick={expIsClicked}
               />
             </div>
@@ -118,12 +119,12 @@ function Banner() {
             </div>
           </div>
         ) : (
-          <div className="lg:absolute top-0 bottom-0 left-0 right-0 z-10">
+          <div className="lg:relative top-0 bottom-0 left-0 right-0 z-10">
             {/* Header */}
             <div className="headerTransparent">
               <p className="headerTitle">Experience</p>
               <ArrowsPointingInIcon
-                className="h-4 w-4 absolute right-4 cursor-pointer"
+                className="h-4 w-4 relative right-2 cursor-pointer"
                 onClick={expIsClicked}
               />
             </div>
@@ -132,7 +133,11 @@ function Banner() {
         )}
       </div>
       {/* 4 Box (Large screen only)*/}
-      <div className="hidden lg:grid lg:col-span-1 lg:row-span-1">
+      <div
+        className={`hidden lg:grid lg:col-span-1 lg:row-span-1 ${
+          show && 'hidden!'
+        } ${setExpShow && 'hidden!'}  `}
+      >
         <div className="bodyTransparent">
           <SkillsSmall />
         </div>

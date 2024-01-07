@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Profile3 from '../../public/images/profile3.png';
+import Profile from '../../public/images/profile/profile-2024.jpeg';
 
 function AboutMe() {
   return (
@@ -11,7 +11,7 @@ function AboutMe() {
             className="rounded-full  "
             width={80}
             height={80}
-            src={Profile3}
+            src={Profile}
             alt="Profile picture"
           />
         </div>
