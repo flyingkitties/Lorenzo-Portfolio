@@ -24,8 +24,8 @@ function Banner() {
 
   return (
     <div
-      className="flex flex-col lg:grid lg:grid-rows-2 lg:grid-cols-3 gap-10 p-5 md:p-12 lg:mx-3 
-    xl:mx-10 "
+      className="flex flex-col lg:grid lg:grid-rows-hScreen lg:grid-cols-3 auto-rows-auto gap-10 p-5 md:p-12 lg:mx-3 
+    xl:mx-10 max-h-screen"
     >
       {/* 1 box */}
       <div
@@ -36,23 +36,23 @@ function Banner() {
         }`}
       >
         {!show ? (
-          <div className="lg:absolute top-0 bottom-12 left-0 right-0">
+          <div className="lg:relative top-0 bottom-0 left-0 right-0 h-[100%] ">
             {/* Header */}
             <div className="headerTransparent">
               <p className="headerTitle">About me</p>
               <ArrowsPointingOutIcon
-                className="h-4 w-4 absolute right-4 cursor-pointer"
+                className="h-4 w-4 relative right-2 cursor-pointer"
                 onClick={isClicked}
               />
             </div>
             {/* end of Header */}
             {/* Body */}
-            <div className=" flex items-center regularBody h-[100%] darkModeBody">
+            <div className="flex items-center regularBody h-[87%] darkModeBody lg:mb-12 pb-3 lg:pb-0">
               <AboutMeSmall />
             </div>
           </div>
         ) : (
-          <div className="lg:absolute top-0 bottom-0 left-0 right-0 z-10">
+          <div className="lg:relative top-0 bottom-0 left-0 right-0 z-10">
             {/* Header */}
             <div className="headerTransparent">
               <p className="headerTitle">About me</p>

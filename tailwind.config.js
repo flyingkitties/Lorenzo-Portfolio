@@ -6,8 +6,17 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
-  plugins: [require('tailwind-scrollbar')({ nocompatible: true })],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
+
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        hScreen: 'repeat(2, minmax(0, 1fr))',
+      },
+    },
   },
 };
