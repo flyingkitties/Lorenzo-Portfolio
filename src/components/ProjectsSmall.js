@@ -1,4 +1,5 @@
 import React from 'react';
+import Tooltip from '@mui/material/Tooltip';
 import ToDoApp from '../../public/images/ToDoApp.png';
 import MaxOut from '../../public/images/maxOut.png';
 import Scoreboard from '../../public/images/scoreboard.png';
@@ -15,8 +16,6 @@ import maxOut9 from '../../public/images/screenShots/maxOut/1.9.png';
 import tuner from '../../public/images/tuner.png';
 import tuner1 from '../../public/images/screenShots/tuner/1.1.png';
 import tuner2 from '../../public/images/screenShots/tuner/1.2.png';
-import ShoppingList from '../../public/images/ShoppingList.png';
-import Emoji from '../../public/images/EmojiDictionary.png';
 import Streaming from '../../public/images/Netflix.png';
 import cloudKit from '../../public/images/Icons/CloudKit.png';
 import coreData from '../../public/images/Icons/CoreData.png';
@@ -57,12 +56,17 @@ function Skills() {
         </a>
         <hr className="horizontalLine" />
         <div className="techIcons">
-          <Image
-            alt="Tech Logo"
-            src={swiftUI}
-            height={20}
-            width={20}
-          />
+          <Tooltip
+            title="Swift UI"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={swiftUI}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
         </div>
         <hr className="horizontalLine pb-3" />
         <div
@@ -107,18 +111,28 @@ function Skills() {
         </a>
         <hr className="horizontalLine" />
         <div className="techIcons">
-          <Image
-            alt="Tech Logo"
-            src={swiftUI}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={firebase}
-            height={20}
-            width={20}
-          />
+          <Tooltip
+            title="Swift UI"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={swiftUI}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
+          <Tooltip
+            title="Firebase"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={firebase}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
         </div>
         <hr className="horizontalLine pb-3" />
         <div
@@ -171,18 +185,28 @@ function Skills() {
         </a>
         <hr className="horizontalLine" />
         <div className="techIcons">
-          <Image
-            alt="Tech Logo"
-            src={uIKit}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={coreData}
-            height={20}
-            width={20}
-          />
+          <Tooltip
+            title="UIKit"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={uIKit}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
+          <Tooltip
+            title="Core Data"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={coreData}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
         </div>
         <hr className="horizontalLine pb-3" />
         <div
@@ -243,42 +267,72 @@ function Skills() {
         </a>
         <hr className="horizontalLine" />
         <div className="techIcons">
-          <Image
-            alt="Tech Logo"
-            src={swiftUI}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={uIKit}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={healthKit}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={cloudKit}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={firebase}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={widgetKit}
-            height={20}
-            width={20}
-          />
+          <Tooltip
+            title="Swift Ui"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={swiftUI}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
+          <Tooltip
+            title="UIKit"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={uIKit}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
+          <Tooltip
+            title="Health Kit"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={healthKit}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
+          <Tooltip
+            title="Cloud Kit"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={cloudKit}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
+          <Tooltip
+            title="Firebase"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={firebase}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
+          <Tooltip
+            title="Widget Kit"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={widgetKit}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
         </div>
         <hr className="horizontalLine pb-3" />
         <div
@@ -380,18 +434,28 @@ function Skills() {
         </a>
         <hr className="horizontalLine" />
         <div className="techIcons">
-          <Image
-            alt="Tech Logo"
-            src={uIKit}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={realmDB}
-            height={20}
-            width={20}
-          />
+          <Tooltip
+            title="UIKit"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={uIKit}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
+          <Tooltip
+            title="RealmDB"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={realmDB}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
         </div>
         <hr className="horizontalLine pb-3" />
         <div
@@ -436,18 +500,28 @@ function Skills() {
         </a>
         <hr className="horizontalLine" />
         <div className="techIcons">
-          <Image
-            alt="Tech Logo"
-            src={swiftUI}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={coreData}
-            height={20}
-            width={20}
-          />
+          <Tooltip
+            title="Swift UI"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={swiftUI}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
+          <Tooltip
+            title="Core Data"
+            arrow
+          >
+            <Image
+              alt="Tech Logo"
+              src={coreData}
+              height={20}
+              width={20}
+            />
+          </Tooltip>
         </div>
         <hr className="horizontalLine pb-3" />
         <div
@@ -480,146 +554,6 @@ function Skills() {
           </div>
         </div>
       </div>
-
-      {/* Card 5 */}
-      {/* <div className="projCards darkModeBody">
-        <a
-          href="https://github.com/Salubrejoe/Emoji-Dictionary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="projAppCards">
-            <Image
-              src={ShoppingList}
-              width={50}
-              height={50}
-              className="rounded-lg hover:border-2 "
-              alt="Shopping List Logo"
-            />
-            <p className="p-4 text-sm ">Shopping List</p>
-          </div>
-        </a>
-        <hr className="horizontalLine" />
-        <div className="techIcons">
-          <Image
-            alt="Tech Logo"
-            src={swiftUI}
-            height={20}
-            width={20}
-          />
-          <Image
-            alt="Tech Logo"
-            src={firebase}
-            height={20}
-            width={20}
-          />
-        </div>
-        <hr className="horizontalLine pb-3" />
-        <div
-          className="flex overflow-scroll overflow-x-scroll scrollbar-thin
-    scrollbar-track-gray-500/20 space-x-5 px-4"
-        >
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52940025753_f9090ed787_k.jpg"
-              alt="Loading"
-              width={200}
-              height={400}
-            />
-          </div>
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52939714104_d1ef503f71_k.jpg"
-              alt="Loading"
-              width={200}
-              height={400}
-            />
-          </div>
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52939569716_0ad7ee22e3_k.jpg"
-              alt="Loading"
-              width={200}
-              height={400}
-            />
-          </div>
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52938973887_8147b28b58_k.jpg"
-              alt="Loading"
-              width={200}
-              height={400}
-            />
-          </div>
-        </div>
-      </div> */}
-
-      {/* Card 7  */}
-      {/* <div className="projCards darkModeBody">
-        <a
-          href="https://github.com/Salubrejoe/Emoji-Dictionary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="projAppCards">
-            <Image
-              src={Emoji}
-              width={50}
-              height={50}
-              className="rounded-lg hover:border-2"
-              alt="Emoji Dictionary icon"
-            />
-            <p className="p-4 text-sm ">Emoji Dictionary</p>
-          </div>
-        </a>
-        <hr className="horizontalLine" />
-        <div className="techIcons">
-          <Image
-            alt="Tech Logo"
-            src={uIKit}
-            height={20}
-            width={20}
-          />
-        </div>
-        <hr className="horizontalLine pb-3" />
-        <div
-          className="flex overflow-scroll overflow-x-scroll scrollbar-thin
-    scrollbar-track-gray-500/20 space-x-5 px-4"
-        >
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52939569891_b22619dffd_k.jpg"
-              alt="Screen 1"
-              width={200}
-              height={400}
-            />
-          </div>
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52938974002_6340a5d117_k.jpg"
-              alt="Screen 2"
-              width={200}
-              height={400}
-            />
-          </div>
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52940025963_e767640bb0_k.jpg"
-              alt="Screen 3"
-              width={200}
-              height={400}
-            />
-          </div>
-          <div className="projImgCards">
-            <Image
-              src="https://live.staticflickr.com/65535/52939569936_fb653ca9d1_k.jpg"
-              alt="Screen 4"
-              width={200}
-              height={400}
-            />
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }

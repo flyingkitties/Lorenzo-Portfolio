@@ -1,111 +1,46 @@
 import Image from 'next/image';
 import React from 'react';
-import cloudKit from '../../public/images/Icons/CloudKit.png';
-import coreData from '../../public/images/Icons/CoreData.png';
-import firebase from '../../public/images/Icons/Firebase.png';
-import healthKit from '../../public/images/Icons/HealthKit.png';
-import realmDB from '../../public/images/Icons/RealmDB.png';
-import swiftUI from '../../public/images/Icons/SwiftUI.png';
-import uIKit from '../../public/images/Icons/UIKit.png';
-import watchKit from '../../public/images/Icons/WatchKit.png';
-import widgetKit from '../../public/images/Icons/WidgetKit.png';
+import tamper from '../../public/images/Tmpr-logo.jpeg';
+import appleDark from '../../public/images/apple/Dark.png';
 
 function BuzzWords() {
   return (
-    <div
-      className=" grid grid-flow-row grid-cols-3 sm:grid-cols-4 
-    lg:grid-cols-3 gap-x-8 gap-y-4 md:gap-10 p-8 min-h-full justify-items-center
-    justify-between"
-    >
-      <div className="skillsLogo">
-        <Image
-          className="skillsImage"
-          src={cloudKit}
-          height={200}
-          width={200}
-          alt="cloudKit logo"
-        />
-        <p>CloudKit</p>
-      </div>
-      <div className="skillsLogo">
-        <Image
-          className="skillsImage"
-          src={coreData}
-          height={200}
-          width={200}
-          alt="coreData logo"
-        />
-        <p>CoreData</p>
-      </div>
-      <div className="skillsLogo">
-        <Image
-          className="skillsImage"
-          src={firebase}
-          height={200}
-          width={200}
-          alt="firebase logo"
-        />
-        <p>Firebase</p>
-      </div>
-      <div className="skillsLogo">
-        <Image
-          className="skillsImage"
-          src={healthKit}
-          height={200}
-          width={200}
-          alt="healthKit logo"
-        />
-        <p>HealthKit</p>
-      </div>
-      <div className="skillsLogo">
-        <Image
-          className="skillsImage"
-          src={realmDB}
-          height={200}
-          width={200}
-          alt="realmDB logo"
-        />
-        <p>RealmDB</p>
-      </div>
-      <div className="skillsLogo">
-        <Image
-          className="skillsImage"
-          src={swiftUI}
-          height={200}
-          width={200}
-          alt="swiftUI"
-        />
-        <p>SwiftUI</p>
-      </div>
-      <div className="skillsLogo">
-        <Image
-          className="skillsImage"
-          src={uIKit}
-          height={200}
-          width={200}
-          alt="uIKit logo"
-        />
-        <p>UIKit</p>
-      </div>
-      <div className="skillsLogo">
-        <Image
-          className="skillsImage"
-          src={watchKit}
-          height={200}
-          width={200}
-          alt="watchKit logo"
-        />
-        <p>WatchKit</p>
-      </div>
-      <div className="skillsLogo">
-        <Image
-          className="skillsImage"
-          src={widgetKit}
-          height={200}
-          width={200}
-          alt="widgetKit logo"
-        />
-        <p>WidgetKit</p>
+    <div className="">
+      <p className="headerTitle m-2">On the App Store</p>
+      <div className="grid grid-cols-2 lg:flex lg:flex-col m-2 sm:m-10 md:m-28 lg:m-3">
+        <div className="lg:flex lg:pb-2 justify-center">
+          <Image
+            src={tamper}
+            className="rounded-3xl w-full lg:w-28 "
+            height={100}
+            width={100}
+            alt="Tamper App Logo"
+          />
+        </div>
+        <div className="grid grid-rows-2 pl-3 lg:px-0 md:pl-5 p-2 text-white text-xs sm:text-sm md:text-base lg:text-sm font-light content-between ">
+          <div className="row-span-2 sm:space-y-2 lg:space-y-1 self-center lg:text-center">
+            <p className="text-base sm:text-lg md:text-xl font-bold sm:pb-2">
+              Tmpr - Dial in Timer
+            </p>
+            <p>Record your recipes.</p>
+            <p>Time the shots.</p>
+            <p>Enjoy your coffee.</p>
+          </div>
+          <div className="lg:flex justify-center">
+            <a
+              href=" https://apps.apple.com/gb/app/tmpr/id6473798369"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={appleDark}
+                className="rounded-lg pt-2 sm:pt-5 lg:p-0 lg:w-32 lg:mt-3 hover:opacity-75 "
+                height={4491}
+                width={1552}
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

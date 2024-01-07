@@ -66,6 +66,12 @@ function Banner() {
           </div>
         )}
       </div>
+      {/* 4 Box (small screen only)*/}
+      <div className="lg:hidden">
+        <div className="bodyTransparent">
+          <SkillsSmall />
+        </div>
+      </div>
       {/* 2 box */}
       <div className="lg:col-span-1 lg:row-span-2">
         <div className="lg:relative h-[100%]">
@@ -125,8 +131,8 @@ function Banner() {
           </div>
         )}
       </div>
-      {/* 4 Box */}
-      <div className="lg:col-span-1 lg:row-span-1">
+      {/* 4 Box (Large screen only)*/}
+      <div className="hidden lg:grid lg:col-span-1 lg:row-span-1">
         <div className="bodyTransparent">
           <SkillsSmall />
         </div>
