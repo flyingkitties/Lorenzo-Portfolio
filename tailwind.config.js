@@ -15,7 +15,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateRows: {
-        hScreen: 'repeat(2, minmax(0, 1fr))',
+        hScreen: 'repeat(2, minmax(1fr))',
       },
     },
   },

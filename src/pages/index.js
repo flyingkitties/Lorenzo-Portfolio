@@ -10,7 +10,7 @@ export default function Home() {
         <title>Lorenzo</title>
         <meta
           name="description"
-          content="Lorenzo Polato - IOS Developer - Brighton"
+          content="Lorenzo Polato - IOS Developer - Apple Developer - Brighton"
           key="desc"
         />
         <link

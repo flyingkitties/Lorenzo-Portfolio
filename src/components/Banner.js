@@ -136,7 +136,7 @@ function Banner() {
       <div
         className={`hidden lg:grid lg:col-span-1 lg:row-span-1 ${
           show && 'hidden!'
-        } ${setExpShow && 'hidden!'}  `}
+        } ${setExpShow && 'hidden!'}`}
       >
         <div className="bodyTransparent">
           <SkillsSmall />

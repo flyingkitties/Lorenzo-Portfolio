@@ -5,28 +5,28 @@ import appleDark from '../../public/images/apple/Dark.png';
 
 function BuzzWords() {
   return (
-    <div className="absolute top-0 left-0 right-0 bottom-0">
+    <div className="">
       <p className="headerTitle m-2">On the App Store</p>
-      <div className="grid grid-cols-2 lg:flex lg:flex-col m-5 mx-auto px-10">
-        <div className="lg:flex lg:pb-2 justify-center ">
+      <div className="grid grid-cols-2 gap-5 lg:gap-0 lg:flex lg:flex-col m-5 mx-auto lg:px-5 md:px-16 p-5">
+        <div className="lg:flex lg:pb-2 justify-center  max-w-[300px] lg:max-w-none shrink">
           <Image
             src={tamper}
-            className="rounded-3xl w-full max-w-xs lg:w-28 "
-            height={100}
-            width={100}
+            className="rounded-3xl w-full lg:w-24 center"
+            height={80}
+            width={80}
             alt="Tamper App Logo"
           />
         </div>
-        <div className="grid grid-rows-2 pl-3 lg:px-0 md:pl-5 p-2 text-white text-xs sm:text-sm md:text-base lg:text-sm font-light content-between ">
+        <div className="grid grid-rows-2 pl-3 shrink-0 lg:px-0 md:pl-5 p-2 text-white text-xs sm:text-sm md:text-base lg:text-sm font-light content-between ">
           <div className="row-span-2 sm:space-y-2 lg:space-y-1 self-center lg:text-center">
-            <p className="text-base sm:text-lg md:text-xl font-bold sm:pb-2">
+            <p className="text-base sm:text-base md:text-lg font-bold sm:pb-2">
               Tmpr - Dial in Timer
             </p>
             <p>Record your recipes.</p>
             <p>Time the shots.</p>
             <p>Enjoy your coffee.</p>
           </div>
-          <div className="lg:flex justify-center">
+          <div className="lg:flex justify-center ">
             <a
               href=" https://apps.apple.com/gb/app/tmpr/id6473798369"
               target="_blank"
@@ -34,9 +34,9 @@ function BuzzWords() {
             >
               <Image
                 src={appleDark}
-                className="rounded-lg max-w-[200px] pt-2 sm:pt-5 lg:p-0 lg:w-32 lg:mt-3 hover:opacity-75 "
-                height={4491}
-                width={1552}
+                className=" rounded-lg shrink  pt-2 sm:pt-5 lg:p-0 lg:w-32 lg:mt-3 hover:opacity-75 "
+                height={449.1}
+                width={155.2}
               />
             </a>
           </div>
