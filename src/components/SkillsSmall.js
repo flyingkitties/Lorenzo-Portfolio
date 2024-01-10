@@ -34,7 +34,7 @@ function BuzzWords() {
             >
               <Image
                 src={appleDark}
-                className=" rounded-lg shrink  pt-2 sm:pt-5 lg:p-0 lg:w-32 lg:mt-3 hover:opacity-75 "
+                className=" rounded-lg shrink pt-2 sm:pt-5 lg:p-0 lg:w-32 lg:mt-3 hover:opacity-75 "
                 height={449.1}
                 width={155.2}
               />
