@@ -55,7 +55,7 @@
     @apply rounded-b-2xl shadow-lg drop-shadow-2xl bg-[#fbfaf6];
   }
   .bodyTransparent {
-    @apply grid content-center backdrop-blur bg-[#fbfaf6]/30  dark:bg-gray-500/30
+    @apply grid backdrop-blur bg-[#fbfaf6]/30  dark:bg-gray-500/30
     rounded-2xl shadow-lg drop-shadow-2xl lg:min-h-full;
   }
   .darkModeBody {

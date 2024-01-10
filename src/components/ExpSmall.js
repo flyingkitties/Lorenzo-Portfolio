@@ -35,9 +35,7 @@ function ExpSmall() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h1 className="text-xl font-bold link hover:text-[#EE7B22]">
-              Check my LinkedIn
-            </h1>
+            <h1 className="text-xl font-bold link ">Check my LinkedIn</h1>
           </a>
           <h2 className="font-semibold">For more information</h2>
         </div>
