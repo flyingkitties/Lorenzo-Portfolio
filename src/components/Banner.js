@@ -8,18 +8,12 @@ import {
 } from '@heroicons/react/24/solid';
 import AboutMeLarge from './AboutMeLarge';
 import ExpSmall from './ExpSmall';
-import ExpLarge from './ExpLarge';
 
 function Banner() {
   const [show, setShow] = useState(false);
-  const [expShow, setExpShow] = useState(false);
 
   const isClicked = () => {
     setShow(!show);
-  };
-
-  const expIsClicked = () => {
-    setExpShow(!expShow);
   };
 
   return (
@@ -29,7 +23,7 @@ function Banner() {
     >
       {/* 1 box */}
       <div
-        className={` ${
+        className={`${
           show
             ? 'relative lg:row-span-full col-span-3'
             : 'relative lg:row-span-1 lg:col-span-2'
@@ -82,9 +76,7 @@ function Banner() {
           {/* Body */}
           <div
             className={`regularBody darkModeBody lg:relative bottom-0 left-0 right-0 
-            top-0 h-[94%] ${
-              show || expShow ? 'lg:min-h-[500px]' : 'lg:min-h-[655px]'
-            }`}
+            top-0 h-[94%] ${show ? 'lg:min-h-[500px]' : 'lg:min-h-[655px]'}`}
           >
             <ProjectsSmall />
           </div>
@@ -93,50 +85,28 @@ function Banner() {
 
       {/* 3 Box */}
       <div
-        className={` ${
-          expShow
-            ? 'relative lg:row-span-full col-span-3'
-            : 'relative lg:row-span-1 lg:col-span-1'
-        }
+        className={`relative lg:row-span-1 lg:col-span-1
         ${show && 'hidden'}`}
       >
-        {!expShow ? (
-          <div className="lg:relative top-0 bottom-0 left-0 right-0 h-[87%]">
-            {/* Header */}
-            <div className="headerTransparent">
-              <p className="headerTitle">Experience</p>
-              <ArrowsPointingOutIcon
-                className="h-4 w-4 relative right-2 cursor-pointer"
-                onClick={expIsClicked}
-              />
-            </div>
-            {/* Body */}
-            <div
-              className="regularBody h-[100%] darkModeBody rounded-b-2xl
+        <div className="lg:relative top-0 bottom-0 left-0 right-0 h-[87%]">
+          {/* Header */}
+          <div className="headerTransparent">
+            <p className="headerTitle">Experience</p>
+          </div>
+          {/* Body */}
+          <div
+            className="regularBody h-[100%] darkModeBody rounded-b-2xl
          "
-            >
-              <ExpSmall />
-            </div>
+          >
+            <ExpSmall />
           </div>
-        ) : (
-          <div className="lg:relative top-0 bottom-0 left-0 right-0 z-10">
-            {/* Header */}
-            <div className="headerTransparent">
-              <p className="headerTitle">Experience</p>
-              <ArrowsPointingInIcon
-                className="h-4 w-4 relative right-2 cursor-pointer"
-                onClick={expIsClicked}
-              />
-            </div>
-            <ExpLarge />
-          </div>
-        )}
+        </div>
       </div>
       {/* 4 Box (Large screen only)*/}
       <div
         className={`hidden lg:grid lg:col-span-1 lg:row-span-1 ${
           show && 'hidden!'
-        } ${setExpShow && 'hidden!'}`}
+        }`}
       >
         <div className="bodyTransparent">
           <SkillsSmall />
