@@ -7,7 +7,7 @@ function BuzzWords() {
   return (
     <div className="">
       <p className="headerTitle m-2">On the App Store</p>
-      <div className="grid grid-cols-2 gap-5 lg:gap-0 lg:flex lg:flex-col m-5 mx-auto lg:px-5 md:px-16 p-5">
+      <div className="grid grid-cols-2 gap-5 lg:gap-0 lg:flex lg:flex-col m-5 mx-auto lg:px-5 lg:p-0 md:px-16 p-5">
         <div className="lg:flex lg:pb-2 justify-center  max-w-[300px] lg:max-w-none shrink">
           <Image
             src={tamper}
@@ -17,7 +17,7 @@ function BuzzWords() {
             alt="Tamper App Logo"
           />
         </div>
-        <div className="grid grid-rows-2 pl-3 shrink-0 lg:px-0 md:pl-5 p-2 text-white text-xs sm:text-sm md:text-base lg:text-sm font-light content-between ">
+        <div className="grid grid-rows-2 shrink-0 lg:px-0 text-white text-xs sm:text-sm md:text-base lg:text-sm font-light content-between ">
           <div className="row-span-2 sm:space-y-2 lg:space-y-1 self-center lg:text-center">
             <p className="text-base sm:text-base md:text-lg font-bold sm:pb-2">
               Tmpr - Dial in Timer
