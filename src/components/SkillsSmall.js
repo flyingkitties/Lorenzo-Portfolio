@@ -7,19 +7,19 @@ function BuzzWords() {
   return (
     <div className="">
       <p className="headerTitle m-2">On the App Store</p>
-      <div className="grid grid-cols-2 gap-5  m-5 mx-auto p-5">
-        <div className="justify-center max-w-[300px] shrink">
+      <div className="grid grid-cols-3 lg:grid-cols-2 lg:gap-2 gap-5 m-5 mb-0 mx-auto p-5">
+        <div className="flex items-center justify-center col-span-1">
           <Image
             src={tamper}
-            className="rounded-3xl w-full h-auto center"
+            className="rounded-3xl w-full h-auto center "
             height={70}
             width={70}
             alt="Tamper App Logo"
           />
         </div>
-        <div className="grid grid-rows-2 shrink-0 lg:px-0 text-white text-xs sm:text-sm md:text-base lg:text-sm font-light content-between ">
+        <div className="grid grid-rows-2 shrink-0 lg:px-0 text-white text-xs sm:text-sm md:text-base lg:text-sm font-light content-between col-span-2 lg:col-span-1">
           <div className="row-span-2 sm:space-y-2 lg:space-y-1 self-center lg:text-center">
-            <p className="text-base sm:text-base md:text-lg font-bold sm:pb-2">
+            <p className="text-base md:text-lg font-bold sm:pb-2">
               Tmpr - Dial in Timer
             </p>
             <p>Record your recipes.</p>
