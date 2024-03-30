@@ -7,13 +7,13 @@ function BuzzWords() {
   return (
     <div className="">
       <p className="headerTitle m-2">On the App Store</p>
-      <div className="grid grid-cols-2 gap-5 lg:gap-0 lg:flex lg:flex-col m-5 mx-auto lg:px-5 lg:p-0 md:px-16 p-5">
-        <div className="lg:flex lg:pb-2 justify-center  max-w-[300px] lg:max-w-none shrink">
+      <div className="grid grid-cols-2 gap-5  m-5 mx-auto p-5">
+        <div className="justify-center max-w-[300px] shrink">
           <Image
             src={tamper}
-            className="rounded-3xl w-full lg:w-24 center"
-            height={80}
-            width={80}
+            className="rounded-3xl w-full h-auto center"
+            height={70}
+            width={70}
             alt="Tamper App Logo"
           />
         </div>

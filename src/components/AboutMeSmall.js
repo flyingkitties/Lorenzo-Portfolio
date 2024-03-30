@@ -5,7 +5,7 @@ import Profile from '../../public/images/profile/profile-2024.jpeg';
 function AboutMe() {
   return (
     <div className="px-6 items-center lg:px-10">
-      <div className="flex py-5 items-center">
+      <div className="flex pb-5 items-center">
         <div className="flex pl-2 space-x-4 items-center text-center ">
           <Image
             className="rounded-full  "

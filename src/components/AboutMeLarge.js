@@ -8,7 +8,7 @@ function AboutMeLarge() {
       className=" px-6 items-center lg:px-20 rounded-b-2xl shadow-lg drop-shadow-2xl 
     bg-[#fbfaf6] pb-2 dark:bg-[#1C1C1E] dark:text-[#fbfaf6]"
     >
-      <div className="flex py-5 lg:py-10 items-center">
+      <div className="flex pb-5 lg:py-10 items-center">
         <div className="flex pl-2 space-x-4 items-center text-center ">
           <Image
             className="rounded-full  "
@@ -29,7 +29,7 @@ function AboutMeLarge() {
         className=" space-y-3 text-[#595260] text-justify px-1 
  lg:space-y-4  lg:leading-relaxed dark:text-[#fbfaf6]"
       >
-        <div className="space-y-1 lg:pb-10 font-semibold">
+        <div className="space-y-1 lg:pb-5 font-semibold">
           <p className="">Welcome!</p>
         </div>
 

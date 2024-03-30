@@ -19,7 +19,7 @@ function Banner() {
   return (
     <div
       className="flex flex-col lg:grid lg:grid-rows-hScreen lg:grid-cols-3 auto-rows-auto gap-10 p-5 md:p-12 lg:mx-3 
-    xl:mx-10 "
+    xl:mx-10"
     >
       {/* 1 box */}
       <div
